@@ -1,0 +1,20 @@
+name: LXPlugin
+main: io.github.lxgaming.lxplugin.LXPlugin
+version: 0.0.1-SNAPSHOT
+description: LXPlugin Snapshot
+commands:
+ Hello:
+  description: Says Hello to the Player.
+  usage: /Hello	
+ HealMe:
+  description: Max's the players Health and Food.
+  usage: /HealMe
+ LXRose:
+  description: Gives Player Flower From LX_Gaming.
+  usage: /LXRose
+ ChosenItem:
+  description: Gives Player TheChosenOne's Famous Cookie.
+  usage: /ChosenItem
+ DillMelon:
+  description: Gives Player Melon of Dillesty.
+  usage: /DillMelon
