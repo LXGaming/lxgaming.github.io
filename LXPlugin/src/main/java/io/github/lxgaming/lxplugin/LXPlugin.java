@@ -52,17 +52,6 @@ public boolean onCommand(CommandSender sender, Command cmd, String label, String
 			return true;
 		}
 		
-		if (cmd.getName().equalsIgnoreCase("DillMelon") && sender instanceof Player) {
-			ItemStack DillMelon = new ItemStack(Material.MELON);
-			ItemMeta DM = DillMelon.getItemMeta();
-			DM.setDisplayName("Melon From xDill(Past Mod)");
-			DillMelon.setItemMeta(DM);
-			player.getInventory().addItem(DillMelon);
-			player.sendMessage("You Have Received A Dill Melon");
-			return true;
-			
-		}
-		
 		return false;
 	}
 }
