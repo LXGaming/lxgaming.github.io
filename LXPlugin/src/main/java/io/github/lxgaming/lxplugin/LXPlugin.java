@@ -36,22 +36,9 @@ public boolean onCommand(CommandSender sender, Command cmd, String label, String
 			LXR.setDisplayName("Rose From LX_Gaming");
 			LXRose.setItemMeta(LXR);
 			player.getInventory().addItem(LXRose);
-			player.sendMessage("You Have Rececived A Rose From LX_Gaming");
+			player.sendMessage(ChatColor.GREEN + "You Have Rececived A Rose From LX_Gaming");
 			return true;	
 		}
-		
-		if (cmd.getName().equalsIgnoreCase("ChosenItem") && sender instanceof Player) {
-			ItemStack ChosenItem = new ItemStack(Material.COOKIE);
-			ItemMeta CI = ChosenItem.getItemMeta();
-			CI.setDisplayName("The Chosen Cookie");
-			CI.addEnchant(Enchantment.DAMAGE_ALL, 2, true);
-			CI.addEnchant(Enchantment.KNOCKBACK, 2, true);
-			ChosenItem.setItemMeta(CI);
-			player.getInventory().addItem(ChosenItem);
-			player.sendMessage("You Have Received The Chosen Cookie");
-			return true;
-		}
-		
 		return false;
 	}
 }
