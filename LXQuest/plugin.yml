@@ -1,5 +1,8 @@
-name: LXPlugin
+name: LXQuest
 main: io.github.lxgaming.lxquest.LXQuest
 version: 0.0.1
 description: LXQuest Snapshot
 commands:
+ Quest:
+  description: Lists all commands for plugin.
+  usage: /Quest
