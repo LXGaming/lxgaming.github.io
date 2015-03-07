@@ -6,3 +6,6 @@ commands:
  Quest:
   description: Lists all commands for plugin.
   usage: /Quest
+ Quest Complete 1:
+  description: Complete Quest
+  usage: /Quest Complete 1
