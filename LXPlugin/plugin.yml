@@ -9,6 +9,3 @@ commands:
  LXRose:
   description: Gives Player Flower From LX_Gaming.
   usage: /LXRose
- ChosenItem:
-  description: Gives Player TheChosenOne's Famous Cookie.
-  usage: /ChosenItem
