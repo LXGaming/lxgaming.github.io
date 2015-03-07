@@ -18,15 +18,28 @@ public class LXQuest extends JavaPlugin {
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		
-		Player player = (Player) sender; 
+		Player player = (Player) sender;
+		int length = args.length;
 		
 		if (cmd.getName().equalsIgnoreCase("Quest") && sender instanceof Player) {
-			player.sendRawMessage("List Of Commands");
-			player.sendRawMessage("1 This command");
-					
+		if (length == 0) {
+			player.sendMessage("Quest Commands");
+			return true;
+			
+		} else {
+		if (args[0].equalsIgnoreCase("Complete")) {
+			player.sendMessage("Pick A Quest Number");
 			return true;
 		}
-		
+		if (args[0].equalsIgnoreCase("Current")) {
+			player.sendMessage("I Need Diamonds!");
+		} else {
+			player.sendMessage("To Much Info");
+			return true;
+		}
+		}
+		}
 		return false;
 	}
 }
+		
