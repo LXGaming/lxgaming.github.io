@@ -1,9 +1,9 @@
 All Files/Plugins
 ========
 
-LX_Gaming's Plugins was created while learning Bukkit and Java Coding. 
-This plugin contain code which has been developed and tested to help understand Bukkit and Java Code. 
-This plugin was created for Educational Purposes, but may be used on a Minecraft Server With Permission From the Creator LXGaming (Alex Thomson)
+LX's Plugins have been created while learning Bukkit and Java coding
+These plugins contain code which has been developed and tested to help understand Bukkit and Java Code. 
+These plugins may be used on a Minecraft Server With Permission From the Creator LX_Gaming (Alex Thomson)
 
 Usage
 ----- 
@@ -14,12 +14,14 @@ LXPlugin
 (https://github.com/LXGaming/lxgaming.github.io/blob/master/LXPlugin/plugin.yml)
 LXQuest
 (https://github.com/LXGaming/lxgaming.github.io/blob/master/LXQuest/plugin.yml)
+LXAffection
+(https://github.com/LXGaming/lxgaming.github.io/blob/master/LXAffection/plugin.yml)
 
 Features
 --------
 
-- Cool Commands that gives players really fun items
-- Custom Recipes
+- Commands that do things
+- Bad Coding (Maybe IDK)
 
 Installation
 ------------
