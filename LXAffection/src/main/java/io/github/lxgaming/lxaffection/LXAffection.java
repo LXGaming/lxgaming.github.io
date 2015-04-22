@@ -51,7 +51,7 @@ public class LXAffection extends JavaPlugin {
 				boolean playerFound = false;
 				for (Player playertoHug : Bukkit.getServer().getOnlinePlayers()) {
 					if (playertoHug.getName().equalsIgnoreCase(args[0])) {
-						playertoHug.sendMessage(ChatColor.GREEN + "You been a hugged by " + player.getName());
+						playertoHug.sendMessage(ChatColor.GREEN + "You been hugged by " + player.getName());
 						player.sendMessage(ChatColor.GREEN + playertoHug.getName() + " was hugged successfully!");
 						playerFound = true;
 						break;
