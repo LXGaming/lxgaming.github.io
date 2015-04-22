@@ -1,0 +1,11 @@
+name: LXHug
+main: io.github.lxgaming.lxaffection.LXAffection
+version: 0.0.1 Snapshot
+description: LXHug Snapshot
+commands:
+ Hug:
+  description: Hugs a Player.
+  usage: /Greeting
+ Kiss:
+  description: Gives Player Flower From LX_Gaming.
+  usage: /LXRose
