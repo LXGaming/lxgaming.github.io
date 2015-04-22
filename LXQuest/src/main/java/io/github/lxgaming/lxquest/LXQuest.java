@@ -34,7 +34,7 @@ public class LXQuest extends JavaPlugin {
 		if (args[0].equalsIgnoreCase("Current")) {
 			player.sendMessage("I Need Diamonds!");
 		} else {
-			player.sendMessage("To Much Info");
+			player.sendMessage("To Much Info!");
 			return true;
 		}
 		}
