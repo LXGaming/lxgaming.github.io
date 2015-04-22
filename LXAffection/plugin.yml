@@ -1,7 +1,7 @@
-name: LXHug
+name: LXAffection
 main: io.github.lxgaming.lxaffection.LXAffection
 version: 0.0.1 Snapshot
-description: LXHug Snapshot
+description: LXAffection Snapshot
 commands:
  Heal:
   description: Heals a Player.
