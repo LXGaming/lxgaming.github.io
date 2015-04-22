@@ -3,9 +3,9 @@ main: io.github.lxgaming.lxaffection.LXAffection
 version: 0.0.1 Snapshot
 description: LXHug Snapshot
 commands:
+ Heal:
+  description: Heals a Player.
+  usage: /Heal
  Hug:
   description: Hugs a Player.
-  usage: /Greeting
- Kiss:
-  description: Gives Player Flower From LX_Gaming.
-  usage: /LXRose
+  usage: /Hug
