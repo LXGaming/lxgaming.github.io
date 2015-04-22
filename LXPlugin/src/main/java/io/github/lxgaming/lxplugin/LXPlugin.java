@@ -25,7 +25,7 @@ public boolean onCommand(CommandSender sender, Command cmd, String label, String
 		Player player = (Player) sender;
 		
 		if (cmd.getName().equalsIgnoreCase("Greeting") && sender instanceof Player) {
-			player.sendMessage(ChatColor.BLUE + "Hello " + player.getName());
+			player.sendMessage(ChatColor.GREEN + "Hello " + player.getName());
 			return true;
 		}
 		
