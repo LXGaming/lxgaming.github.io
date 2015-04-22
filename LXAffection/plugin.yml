@@ -1,6 +1,6 @@
 name: LXAffection
 main: io.github.lxgaming.lxaffection.LXAffection
-version: 0.0.1 Snapshot
+version: 0.0.5 Snapshot
 description: LXAffection Snapshot
 commands:
  Heal:
@@ -9,3 +9,6 @@ commands:
  Hug:
   description: Hugs a Player.
   usage: /Hug
+ Kiss:
+  description: Kiss a Player.
+  usage: /Kiss
