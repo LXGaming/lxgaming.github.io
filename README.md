@@ -10,12 +10,9 @@ Usage
 
 Simply Type Commands In-Game
 Check the link below for a list of commands
-- LXPlugin
-(https://github.com/LXGaming/lxgaming.github.io/blob/master/LXPlugin/plugin.yml)
-- LXQuest
-(https://github.com/LXGaming/lxgaming.github.io/blob/master/LXQuest/plugin.yml)
-- LXAffection
-(https://github.com/LXGaming/lxgaming.github.io/blob/master/LXAffection/plugin.yml)
+- LXPlugin (https://github.com/LXGaming/lxgaming.github.io/blob/master/LXPlugin/plugin.yml)
+- LXQuest (https://github.com/LXGaming/lxgaming.github.io/blob/master/LXQuest/plugin.yml)
+- LXAffection (https://github.com/LXGaming/lxgaming.github.io/blob/master/LXAffection/plugin.yml)
 
 Features
 --------
@@ -25,7 +22,7 @@ Features
 
 Installation
 ------------
-Compile and Copy the .jar file to your Plugin's folder
+- Compile and Copy the .jar file to your Plugin's folder
 
 Contribute
 ----------
