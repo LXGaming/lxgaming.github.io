@@ -10,11 +10,11 @@ Usage
 
 Simply Type Commands In-Game
 Check the link below for a list of commands
-LXPlugin
+- LXPlugin
 (https://github.com/LXGaming/lxgaming.github.io/blob/master/LXPlugin/plugin.yml)
-LXQuest
+- LXQuest
 (https://github.com/LXGaming/lxgaming.github.io/blob/master/LXQuest/plugin.yml)
-LXAffection
+- LXAffection
 (https://github.com/LXGaming/lxgaming.github.io/blob/master/LXAffection/plugin.yml)
 
 Features
