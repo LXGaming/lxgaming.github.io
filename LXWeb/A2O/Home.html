@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html>
+
+<link rel="stylesheet" type="text/css" media="screen" href="./Resources/CSS/stylesheet.css"/>
+<link rel="shortcut icon" href="./Resources/Photo/LogoIcon.ico"/>
 <head>
 <title>Alps to Ocean</title>
 </head>
-<link rel="stylesheet" type="text/css" media="screen" href="./Resources/CSS/stylesheet.css" />
 <body>
+
+	<button class="A20LogoBar" onClick="NavBarChange()"></button>
+	<div id="NavBar"></div>
+	<div class="A2OLogo">
+	<a href="http://www.alps2ocean.com/">
+	<img src="./Resources/Photo/logo.png" alt="A2O" style="width:125px;height:64px"></a></div>
+	<div class="Title">
+	<p class="TitleText">Welcome</p>
+	</div>
+
+	<script type="text/javascript">
+	function NavBarChange()
+	{
+    	var NavBar = document.getElementById("NavBar");
+    	if (NavBar.style.visibility=="hidden") NavBar.style.visibility = "visible";
+   	else NavBar.style.visibility = "hidden";
+	}
+	</script>
+
 	<script src="./Resources/JS/jquery.js"></script>
-    <script src="./Resources/JS/jquery.backstretch.js"></script>
-    <script>
+	<script src="./Resources/JS/jquery.backstretch.js"></script>
+	<script>
         $.backstretch([
-            "./Resources/Photo/Yosemite01.jpg",
-            "./Resources/Photo/Yosemite02.jpg",
-            "./Resources/Photo/Yosemite03.jpg",
-            "./Resources/Photo/Yosemite04.jpg", ], {
+            "./Resources/Photo/A2O01.jpg",
+            "./Resources/Photo/A2O02.jpg",
+            "./Resources/Photo/A2O03.jpg", ], {
             fade: 2500, //Speed of Fade
             duration: 5000 //Time of image display
         });
-    </script>
-	<div class="Heading">
-        	<p class="HeadingText">Welcome To A2O</p>
-    </div>
+	</script>
+
 </body>
 </html>
