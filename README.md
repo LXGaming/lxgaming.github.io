@@ -1,34 +1,34 @@
-All Files/Plugins
+Information
 ========
 
-LX's Plugins have been created while learning Bukkit and Java coding
-These plugins contain code which has been developed and tested to help understand Bukkit and Java Code. 
-These plugins may be used on a Minecraft Server With Permission From the Creator LX_Gaming (Alex Thomson)
+The files contained within LXGaming's Github Repos have been created while self-learning different coding languages
+
 
 Usage
 ----- 
 
-Simply Type Commands In-Game
-Check the link below for a list of commands
-- LXPlugin (https://github.com/LXGaming/lxgaming.github.io/blob/master/LXPlugin/plugin.yml)
-- LXQuest (https://github.com/LXGaming/lxgaming.github.io/blob/master/LXQuest/plugin.yml)
-- LXAffection (https://github.com/LXGaming/lxgaming.github.io/blob/master/LXAffection/plugin.yml)
+Files contained within LXGaming's Github Repos may be redistributed ONLY with permission from the creator LX_Gaming (Alex Thomson)
+To get Permission please contact me via PM @alexrobthomson 
 
 Features
 --------
 
-- Commands that do things
-- Bad Coding (Maybe IDK)
+- Spigot Plugins
+- Forge Mods
+- Visual Studio Projects
+- Website
 
 Installation
 ------------
-- Compile and Copy the .jar file to your Plugin's folder
+
+- Copy and Compile the Plugins/Mods
+- ONLY USE IF YOU HAVE PERMISSION
 
 Contribute
 ----------
 
-- Issue Tracker: github.com/LXGaming/lxgaming.github.io/issues
-- Source Code: github.com/LXGaming/lxgaming.github.io/
+- Issue Tracker: github.com/LXGaming/<REPO NAME>/issues
+- Source Code: github.com/LXGaming/<REPO NAME>
 
 Support
 -------
