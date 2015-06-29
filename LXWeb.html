@@ -3,40 +3,46 @@
 <head>
 <title>LXWeb</title>
 <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/LXWeb.css"/>
-<link rel="shortcut icon" href="../images/"/>
+<link rel="shortcut icon" href="images/GitHubIcon.png"/>
 <script src="javascripts/LXVisibility.js"></script>
 <script src="javascripts/alphabet.js"></script>
 <script src="javascripts/jquery.js"></script>
 <script src="javascripts/jquery.backstretch.js"></script>
 </head>
-<body>
 
+<body>
 <input type="button" id="LXVisibilityButton" onclick="LXVisibility()"/>
-	<div id="NavigationBase"></div>
-	<div id="LXWebLogo">
-	<a href="LXWeb.html">
-	<img src="images/Titles/Logo.png" alt="LXWebLogo" style="width:200px;height:50px"></a></div>
-	</div>
-	
-	<div id="Navigation">
-	<a href="index.html">Github</a>
-	</div>
-	
-	<script>
-        $.backstretch([
-            "images/Background/Yosemite01.jpg",
-            "images/Background/Yosemite02.jpg",
-			"images/Background/Yosemite03.jpg",
-			"images/Background/Yosemite04.jpg",
-            "images/Background/Ocean.jpg", ], {
-            fade: 2500, //Speed of Fade
-            duration: 5000 //Time of image display
-        });
-	</script>
-	
-	<canvas id="myCanvas"></canvas>
-    <script type="text/javascript" src="javascripts/bubbles.js"></script>
-    <script type="text/javascript" src="javascripts/main.js"></script>
-	
+<div id="NavigationBase"></div>
+<div id="LXWebLogo">
+<a href="LXWeb.html">
+<img src="images/Titles/Logo.png" alt="LXWebLogo" style="width:200px;height:50px"></a></div>
+<div id="Navigation">
+<a href="https://github.com/LXGaming/JARVIS">Jarvis</a>
+<a href="index.html">Github</a>
+</div>
+
+<div id="Main">
+<div id="MainAlpha">
+<h1>Welcome to</h1></div>
+<div id="MainBravo">
+<h1>Created By: Alex Thomson</h1></div>
+</div>
+
+<script>
+$.backstretch([
+"images/Background/Yosemite01.jpg",
+"images/Background/Yosemite02.jpg",
+"images/Background/Yosemite03.jpg",
+"images/Background/Yosemite04.jpg",
+"images/Background/Ocean.jpg", ], {
+fade: 2500, //Speed of Fade
+duration: 5000 //Time of image display
+});
+</script>
+
+<canvas id="myCanvas"></canvas>
+<script type="text/javascript" src="javascripts/bubbles.js"></script>
+<script type="text/javascript" src="javascripts/main.js"></script>
+
 </body>
 </html>
