@@ -1,61 +1,110 @@
-#NavigationBase {
-   background-color: #FFFFFF;
-   opacity: 1;
-   height: 70px;
-   width: 100%;
-   transform: translate(-50%, -50%);
-   position: fixed;
-   top: 35px;
-   left: 50%;
-   z-index: 1;
-   visibility: visible;
-}
-#LXVisibilityButton {
-   background-color: #3a3a3a;
-   opacity: 1;
-   height: 70px;
-   width: 20px;
-   transform: translate(-50%, -50%);
-   position: fixed;
-   top: 35px;
-   left: 0px;
-   z-index: 4;
-   border: none;
-}
-#LXWebLogo {
-   height: 50px;
-   width: 0%;
-   transform: translate(-50%, -50%);
-   position: fixed;
-   top: 35px;
-   left: 5px;
-   z-index: 3;
-}
-#Navigation {
-	position: fixed;
-	top: 10px;
-	width: 100%;
-	text-align: center;
-	padding-top: 15px;
-	z-index: 2;
-	visibility: visible;
-}
-#Navigation a {
-	font-size: 20px;
-	padding-left: 15px;
-	padding-right: 15px;
-	color: black;
-	text-decoration: none;
-}
-#Navigation a:hover {
-	color: grey;
-}
-#myCanvas {
-   transform: translate(-50%, -50%);
-   position: absolute;
-   top: 320px;
-   left: 50%;
-   z-index: 1;
-   visibility: visible;
+* {
+margin: 0;
+padding: 0;
 }
 
+html {
+height: 100%;
+}
+
+body  {
+font-family: Arial;
+color: #FFFFFF;
+font-size: 14px;
+height: 100%;
+max-width: 100%;
+overflow-x: hidden;
+}
+
+#NavigationBase {
+background-color: #FFFFFF;
+opacity: 1;
+height: 70px;
+width: 100%;
+transform: translate(-50%, -50%);
+position: fixed;
+top: 35px;
+left: 50%;
+z-index: 2;
+box-shadow: 0px 0px 10px 0px #000000;
+visibility: visible;
+}
+
+#LXVisibilityButton {
+background-color: #3a3a3a;
+opacity: 1;
+height: 70px;
+width: 20px;
+transform: translate(-50%, -50%);
+position: fixed;
+top: 35px;
+left: 0px;
+z-index: 5;
+border: none;
+}
+
+#LXWebLogo {
+height: 50px;
+width: 0%;
+transform: translate(-50%, -50%);
+position: fixed;
+top: 35px;
+left: 5px;
+z-index: 4;
+}
+
+#Navigation {
+position: fixed;
+top: 10px;
+width: 100%;
+text-align: center;
+padding-top: 10px;
+z-index: 3;
+visibility: visible;
+}
+
+#Navigation a {
+font-size: 25px;
+padding-left: 15px;
+padding-right: 15px;
+color: black;
+text-decoration: none;
+}
+
+#Navigation a:hover {
+color: grey;
+}
+
+#myCanvas {
+transform: translate(-50%, -50%);
+position: absolute;
+top: 320px;
+left: 50%;
+z-index: 1;
+visibility: visible;
+}
+
+#Main  {
+width: 100%;
+min-height: 100%;
+overflow:auto;
+background: #000000;
+margin: 0 auto;
+text-align: center;
+opacity: 0.75;
+z-index: 1;
+box-shadow: 0px 0px 10px 0px #000000;
+visibility: visible;
+}
+
+#MainAlpha {
+padding-top: 125px;
+font-size: 225%;
+text-align: center;
+}
+
+#MainBravo {
+padding-top: 250px;
+font-size: 100%;
+text-align: center;
+}
