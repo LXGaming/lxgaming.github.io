@@ -7,23 +7,32 @@ html {
 height: 100%;
 }
 
-body  {
-font-family: Arial;
+h1  {
+font-family: Arial, Helvetica, sans-serif;
 color: #FFFFFF;
-font-size: 14px;
+font-size: 45px;
+height: 100%;
+max-width: 100%;
+overflow-x: hidden;
+}
+
+body  {
+font-family: Arial, Helvetica, sans-serif;
+color: #FFFFFF;
+font-size: 15px;
 height: 100%;
 max-width: 100%;
 overflow-x: hidden;
 }
 
 #NavigationBase {
-background-color: #FFFFFF;
-opacity: 1;
-height: 70px;
+background-color: #000000;
+opacity: 0.5;
+height: 50px;
 width: 100%;
 transform: translate(-50%, -50%);
 position: fixed;
-top: 35px;
+top: 25px;
 left: 50%;
 z-index: 2;
 box-shadow: 0px 0px 10px 0px #000000;
@@ -33,29 +42,30 @@ visibility: visible;
 #LXVisibilityButton {
 background-color: #3a3a3a;
 opacity: 1;
-height: 70px;
-width: 20px;
+outline:0;
+height: 50px;
+width: 10px;
 transform: translate(-50%, -50%);
 position: fixed;
-top: 35px;
-left: 0px;
+top: 25px;
+left: 5px;
 z-index: 5;
 border: none;
 }
 
 #LXWebLogo {
-height: 50px;
+height: 25px;
 width: 0%;
 transform: translate(-50%, -50%);
 position: fixed;
-top: 35px;
-left: 5px;
+top: 25px;
+left: 10px;
 z-index: 4;
 }
 
 #Navigation {
 position: fixed;
-top: 10px;
+top: 5px;
 width: 100%;
 text-align: center;
 padding-top: 10px;
@@ -64,15 +74,15 @@ visibility: visible;
 }
 
 #Navigation a {
-font-size: 25px;
+font-size: 18px;
 padding-left: 15px;
 padding-right: 15px;
-color: black;
+color: white;
 text-decoration: none;
 }
 
 #Navigation a:hover {
-color: grey;
+color: lightgrey;
 }
 
 #myCanvas {
