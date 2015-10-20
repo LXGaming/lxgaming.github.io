@@ -40,7 +40,7 @@ visibility: visible;
 }
 
 #LXVisibilityButton {
-background-color: #3a3a3a;
+background-color: #FFFFFF;
 opacity: 1;
 outline:0;
 height: 50px;
@@ -88,7 +88,7 @@ color: lightgrey;
 #myCanvas {
 transform: translate(-50%, -50%);
 position: absolute;
-top: 320px;
+top: 200px;
 left: 50%;
 z-index: 1;
 visibility: visible;
@@ -96,7 +96,7 @@ visibility: visible;
 
 #Main  {
 width: 100%;
-min-height: 100%;
+min-height: 110%;
 overflow:auto;
 background: #000000;
 margin: 0 auto;
@@ -108,13 +108,27 @@ visibility: visible;
 }
 
 #MainAlpha {
-padding-top: 125px;
-font-size: 225%;
+padding-top: 75px;
+font-size: 18px;
 text-align: center;
 }
 
 #MainBravo {
-padding-top: 250px;
-font-size: 100%;
+padding-top: 150px;
+font-size: 18px;
 text-align: center;
+}
+
+#Break {
+background-color: #FFFFFF;
+opacity: 0.5;
+height: 2px;
+z-index: 2;
+}
+
+#Content {
+padding-top: 5px;
+padding-left: 10px;
+font-size: 20px;
+text-align: left;
 }
