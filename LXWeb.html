@@ -10,29 +10,28 @@
 <script src="javascripts/jquery.backstretch.js"></script>
 </head>
 
-<body>
-<input type="button" id="LXVisibilityButton" onclick="LXVisibility()"/>
-<div id="NavigationBase"></div>
-<div id="LXWebLogo">
-<a href="LXWeb.html">
-<img src="images/Titles/LXWeb.png" alt="LXWebLogo" style="width:100px;height:25px"></a></div>
-<div id="Navigation">
-<a href="https://github.com/LXGaming/JARVIS">Jarvis</a>
-<a href="index.html">Github</a>
+<body id="body">
+<header>
+<input type="button" id="lxvb" onclick="LXVisibility()"/>
+
+<div id="nav">
+<ul>
+<li class="Powershell"><a href="https://github.com/LXGaming/Powershell">Powershell</a></li>
+<li class="LXMod"><a href="https://github.com/LXGaming/LXMod">LXMod</a></li>
+<li class="Github"><a href="index.html">Github</a></li>
+<li class="Jarvis"><a href="https://github.com/LXGaming/Jarvis">Jarvis</a></li>
+<li class="Anticurse"><a href="https://github.com/LXGaming/AntiCurse">Anticurse</a></li>
+</ul>
 </div>
+</header>
 
-<div id="Main">
-<div id="MainAlpha">
-<h1>Welcome to</h1></div>
-<div id="MainBravo">
-<h1>Created By: Alex Thomson</h1></div>
-
-<div id="Break"></div>
-<div id="Content">
-<p>Last Edited 20/10/2015 @ 11:11pm</p></div>
-
+<div id="content">
+<ul>
+<li><br><h1>Welcome to</h1><br><br><br><br><br><br></li>
+<canvas id="myCanvas"></canvas>
+<li><br><br><br><br><br><br><h1>Created by: Alex Thomson</h1><br><hr></li>
+</ul>
 </div>
-
 
 <script>
 $.backstretch([
@@ -46,7 +45,6 @@ duration: 7500 //Time of image display
 });
 </script>
 
-<canvas id="myCanvas"></canvas>
 <script type="text/javascript" src="javascripts/bubbles.js"></script>
 <script type="text/javascript" src="javascripts/main.js"></script>
 

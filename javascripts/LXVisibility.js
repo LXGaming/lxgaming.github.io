@@ -1,18 +1,18 @@
 function LXVisibility(){
-var NavigationBase = document.getElementById("NavigationBase").style;
-var Navigation = document.getElementById("Navigation").style;
+var nav = document.getElementById("nav").style;
+var content = document.getElementById("content").style;
+var lxvb = document.getElementById("lxvb").style;
 var myCanvas = document.getElementById("myCanvas").style;
-var Main = document.getElementById("Main").style;
-		
-if (NavigationBase.visibility=="hidden") NavigationBase.visibility = "visible";
-else NavigationBase.visibility = "hidden";
-		
-if (Navigation.visibility=="hidden") Navigation.visibility = "visible";
-else Navigation.visibility = "hidden";
+
+if (nav.visibility=="hidden") nav.visibility = "visible";
+else nav.visibility = "hidden";
+
+if (content.visibility=="hidden") content.visibility = "visible";
+else content.visibility = "hidden";
+
+if (lxvb.background=="url('./images/Titles/LXWebBlue.png') no-repeat center") lxvb.background = "url('./images/Titles/LXWebWhite.png') no-repeat center";
+else lxvb.background = "url('./images/Titles/LXWebBlue.png') no-repeat center";
 
 if (myCanvas.visibility=="hidden") myCanvas.visibility = "visible";
 else myCanvas.visibility = "hidden";
-
-if (Main.visibility=="hidden") Main.visibility = "visible";
-else Main.visibility = "hidden";
 }
