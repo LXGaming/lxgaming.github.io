@@ -82,7 +82,7 @@ line-height: 50px;
 }
 
 #lxvb {
-background: url('../images/Titles/LXWebWhite.png') no-repeat center;
+background: url('../images/Titles/LXWebWhite.png') center;
 height: 50px;
 width: 125px;
 transform: translate(-50%, -50%);
