@@ -10,8 +10,8 @@ else nav.visibility = "hidden";
 if (content.visibility=="hidden") content.visibility = "visible";
 else content.visibility = "hidden";
 
-if (lxvb.background=="url('./images/Titles/LXWebBlue.png') no-repeat center") lxvb.background = "url('./images/Titles/LXWebWhite.png') no-repeat center";
-else lxvb.background = "url('./images/Titles/LXWebBlue.png') no-repeat center";
+if (nav.visibility=="hidden") lxvb.background = "url('./images/Titles/LXWebBlack.png') center";
+else lxvb.background = "url('./images/Titles/LXWebWhite.png') center";
 
 if (myCanvas.visibility=="hidden") myCanvas.visibility = "visible";
 else myCanvas.visibility = "hidden";
