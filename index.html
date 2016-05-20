@@ -1,47 +1,49 @@
 <html>
-<head>
-<title>LXWeb - Home</title>
-<link rel="shortcut icon" href="images/icons/github.png"/>
-<link rel="stylesheet" href="stylesheets/main.css"/>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-<script src="javascripts/jquery.js"></script>
-<script src="javascripts/backstretch.js"></script>
-<script src="javascripts/lxvisibility.js"></script>
-<head>
-
-<header>
-<input type="button" id="logo" onclick="LXVisibility()"/>
-</header>
-
-<body>
-<div id="main"></div>
-
-<div id="content">
-<img src="images\titles\lxgaming.png" alt="LXGaming" style="margin-top:50px;margin-bottom:10px;width:150px;height:300px;"></img>
-
-<div id="hr"></div>
-<div id="icon" style="background-image:url(images/icons/github.png);"><h1 style="width:100px;margin-left:55px;margin-top:12px"><a href="https://github.com/LXGaming" style="text-decoration:none;color:deepskyblue;line-height:25px;">Repositories</a></h1></div>
-<div id="icon" style="background-image:url(images/icons/java.png);"><h1 style="width:100px;margin-left:55px;margin-top:12px"><a href="https://github.com/LXGaming/Java" style="text-decoration:none;color:deepskyblue;line-height:25px;">Java</a></h1></div>
-<div id="icon" style="background-image:url(images/icons/powershell.png);"><h1 style="width:100px;margin-left:55px;margin-top:12px"><a href="https://github.com/LXGaming/Powershell" style="text-decoration:none;color:deepskyblue;line-height:25px;">Powershell</a></h1></div>
-<div id="icon" style="background-image:url(images/icons/visualstudio.png);"><h1 style="width:100px;margin-left:55px;margin-top:12px"><a href="https://github.com/LXGaming/VisualStudio" style="text-decoration:none;color:deepskyblue;line-height:25px;">VisualStudio</a></h1></div>
-<div id="icon" style="background-image:url(images/icons/discord.png);"><h1 style="width:100px;margin-left:55px;margin-top:12px"><a href="https://github.com/LXGaming/DiscordBot" style="text-decoration:none;color:deepskyblue;line-height:25px;">DiscordBot</a></h1></div>
-<div id="icon" style="background-image:url(images/icons/twitter.ico);"><h1 style="width:100px;margin-left:55px;margin-top:12px"><a href="social.html" style="text-decoration:none;color:deepskyblue;line-height:25px;">Social</a></h1></div>
-<div id="icon" style="background-image:url(images/icons/paypal.ico);"><h1 style="width:100px;margin-left:55px;margin-top:12px"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TVT5B45AHNP9J" target="_blank" style="text-decoration:none;color:deepskyblue;line-height:25px;">Donate</a></h1></div>
-
-</div>
-</body>
-
-<script>
-$.backstretch([
-"images/backgrounds/bloketopus.jpg",
-"images/backgrounds/darkwing.jpg",
-"images/backgrounds/divisionii.jpg",
-"images/backgrounds/elcapitan01.jpg",
-"images/backgrounds/elcapitan02.jpg",
-"images/backgrounds/ghostsii.jpg",
-"images/backgrounds/windows01.jpg",
-"images/backgrounds/yosemite01.jpg",
-"images/backgrounds/yosemite02.jpg"], {
-fade: 1000, duration: 10000});
-</script>
+  <head>
+	<title>LX_Gaming - Home</title>
+	<link rel="shortcut icon" href="images/icon/github.png"/>
+	<link rel="stylesheet" href="stylesheets/style.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700,800"/>
+	<script src="javascripts/jquery-2.2.3.min.js"></script>
+	<script src="javascripts/backstretch.js"></script>
+	<script src="javascripts/javascript.js"></script>
+  </head>
+  
+  <body>
+	<div id="image"></div>
+	<div id="opaque"></div>
+	<div id="mesh"></div>
+	<div id="content">
+	  <h2 style="padding:5%;margin-bottom:100px;color:white;text-align:left;font-size:40px;">LX_Gaming</h2>
+	  <img id="logo" src="images/icon/lxgamingface.png" style="border: 2px solid black;">
+	  <h2 style="color:white;padding-bottom:150px;padding-top:150px;font-size:40px">Alex Thomson<br>
+	  <button onclick="Image()"><p style="cursor:pointer;color:white;font-size:30px">&lt;Software Engineer/&gt;</p></button></h2>
+	  <button onclick="ScrollDown()" style="cursor:pointer;padding-top:1%;"><img id="logo" src="images/icon/whitearrowdown.png" style="height:100px;"></button>
+	</div>
+	
+	<div id="content" style="top:100%;background-color:white;">
+	  <button onclick="ScrollUp()"><img id="logo" src="images/icon/blackarrowup.png" style="cursor:pointer;top:50px;;height:100px;"></button>
+	  <div style="padding-top:150px;text-align:center;">
+	  <h2 style="color:black;font-size:40px;display:inline;">Repositories<br><br>
+	  <button><p style="color:black;font-size:30px;">&lt;<a href="https://github.com/LXGaming/Java" style="text-decoration:none;color:deepskyblue;">Java</a>&nbsp; -&nbsp;</p></button>
+	  <button><p style="color:black;font-size:30px"><a href="https://github.com/LXGaming/DiscordBot" style="text-decoration:none;color:deepskyblue;">DiscordBot</a>&nbsp; -&nbsp;</p></button>
+	  <button><p style="color:black;font-size:30px"><a href="https://github.com/LXGaming/VisualStudio" style="text-decoration:none;color:deepskyblue;">VisualStudio</a>&nbsp; -&nbsp;</p></button>
+	  <button><p style="color:black;font-size:30px"><a href="https://github.com/LXGaming/Powershell" style="text-decoration:none;color:deepskyblue;">Powershell</a>/&gt;</p></button></h2>
+	  </div>
+	  <div style="padding-top:100px;text-align:center;">
+	  <h2 style="color:black;font-size:40px;display:inline;pad">Support<br><br>
+	  <button><p style="color:black;font-size:30px">&lt;<a href="https://twitter.com/alexrobthomson" style="text-decoration:none;color:deepskyblue;">Social</a>&nbsp; -&nbsp;</p></button>
+	  <button><p style="color:black;font-size:30px"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TVT5B45AHNP9J" style="text-decoration:none;color:deepskyblue;">Donate</a>/&gt;</p></button></h2>
+	  </div>
+  </body>
+  
+  <script>
+	$.backstretch([
+	  "images/background/elcapitan01.jpg",
+	  "images/background/elcapitan02.jpg",
+	  "images/background/windows01.jpg",
+	  "images/background/yosemite01.jpg",
+	  "images/background/yosemite02.jpg"],
+	{fade: 1000, duration: 10000});
+  </script>
 </html>
