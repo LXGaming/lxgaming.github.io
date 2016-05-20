@@ -9,6 +9,16 @@ function Image() {
 	return;
 }
 
+function Mesh() {
+	var mesh = document.getElementById("mesh").style;
+	if (mesh.visibility == "visible") {
+		mesh.visibility = "hidden";
+	} else {
+		mesh.visibility = "visible";
+	}
+	return;
+}
+
 function ScrollDown() {
 	var body = $("body");
 	$("html, body").animate({ scrollTop: body.height()}, 2000);

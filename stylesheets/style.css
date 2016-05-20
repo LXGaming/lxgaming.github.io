@@ -15,7 +15,7 @@ body {
 
 p {
 	color: black;
-	cursor:default;
+	cursor: default;
 	font-size: 20px;
 	font-weight: 200;
 	text-align: center;
@@ -24,7 +24,7 @@ p {
 
 h1 {
 	color: black;
-	cursor:default;
+	cursor: default;
 	font-size: 20px;
 	font-weight: 400;
 	text-align: center;
@@ -33,7 +33,7 @@ h1 {
 
 h2 {
 	color: black;
-	cursor:default;
+	cursor: default;
 	font-size: 20px;
 	font-weight: 600;
 	text-align: center;
@@ -71,7 +71,7 @@ button {
 	position: absolute;
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAD0lEQVQIW2NkQAKMuDj/AQF0AQN/iLF4AAAAAElFTkSuQmCC);
 	background-repeat: repeat;
-	visibility: visible;
+	visibility: hidden;
 	z-index: 3;
 }
 
