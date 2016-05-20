@@ -10,6 +10,7 @@ html {
 body {
 	max-height: 100%;
 	max-width: 100%;
+	overflow: hidden;
 }
 
 p {
@@ -79,6 +80,7 @@ button {
 	width: 100%;
 	position: absolute;
 	visibility: visible;
+	overflow: auto;
 	z-index: 4;
 }
 
