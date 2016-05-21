@@ -51,7 +51,7 @@ button {
 	width: 100%;
 	position: fixed;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: cover;
 	visibility: hidden;
 	z-index: 1;
 }
