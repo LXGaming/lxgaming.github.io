@@ -50,7 +50,8 @@ button {
 	height: 100%;
 	width: 100%;
 	position: fixed;
-	background-size: cover;
+	background-repeat: no-repeat;
+	background-size: auto;
 	visibility: hidden;
 	z-index: 1;
 }
