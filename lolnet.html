@@ -1,0 +1,29 @@
+<html>
+  <head>
+	<title>Lolnet - Server Status</title>
+	<link rel="shortcut icon" href="images/icon/lolnet.png"/>
+	<link rel="stylesheet" href="stylesheets/lolnet.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700,800"/>
+	<script src="javascripts/jquery-2.2.3.min.js"></script>
+	<script src="javascripts/backstretch.js"></script>
+	<script src="javascripts/lolnet.js"></script>
+  </head>
+  
+  <body>
+	<div id="opaque"></div>
+	<div id="content">
+		<button style="text-align:center;" onclick="AjaxTyla()">ClickMe</button>
+		<p style="color:white;">Result: <span></span></p>
+	</div>
+  </body>
+  
+  <script>
+	$.backstretch([
+	  "images/background/elcapitan01.jpg",
+	  "images/background/elcapitan02.jpg",
+	  "images/background/windows01.jpg",
+	  "images/background/yosemite01.jpg",
+	  "images/background/yosemite02.jpg"],
+	{fade: 1000, duration: 10000});
+  </script>
+</html>
