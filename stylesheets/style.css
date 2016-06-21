@@ -10,7 +10,7 @@ html {
 body {
 	max-height: 100%;
 	max-width: 100%;
-	overflow: hidden;
+	overflow: auto;
 }
 
 p {
@@ -57,6 +57,7 @@ button {
 }
 
 #opaque {
+	min-height: 750px;
 	height: 100%;
 	width: 100%;
 	position: absolute;
@@ -67,6 +68,7 @@ button {
 }
 
 #mesh {
+	min-height: 750px;
 	height: 100%;
 	width: 100%;
 	position: absolute;
@@ -77,11 +79,12 @@ button {
 }
 
 #content {
+	min-height: 750px;
 	height: 100%;
 	width: 100%;
-	position: absolute;
+	position: relative;
 	visibility: visible;
-	overflow: auto;
+	overflow: hidden;
 	z-index: 4;
 }
 
