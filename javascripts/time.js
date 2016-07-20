@@ -1,7 +1,7 @@
 function timeStart() {
   update();
   setTimeout(function() {
-    update();
+    timeStart();
   }, 1000);
 }
 
