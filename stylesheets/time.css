@@ -32,6 +32,7 @@ body {
 }
 
 #content {
+  top: 25%;
   width: 100%;
   color: white;
   cursor: default;
