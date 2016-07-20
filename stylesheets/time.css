@@ -15,7 +15,7 @@ body {
 #image {
   height: 100%;
   width: 100%;
-  background-image: url(../images/background/sierra.jpg);
+  background-image: url(../images/background/elcapitan01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
@@ -27,7 +27,7 @@ body {
   width: 100%;
   position: fixed;
   background-color: black;
-  opacity: 0.75;
+  opacity: 0.5;
   z-index: 2;
 }
 
