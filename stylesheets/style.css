@@ -67,17 +67,6 @@ button {
 	z-index: 2;
 }
 
-#mesh {
-	min-height: 750px;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAD0lEQVQIW2NkQAKMuDj/AQF0AQN/iLF4AAAAAElFTkSuQmCC);
-	background-repeat: repeat;
-	visibility: hidden;
-	z-index: 3;
-}
-
 #content {
 	min-height: 750px;
 	height: 100%;
