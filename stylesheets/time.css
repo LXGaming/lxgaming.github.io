@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+
+#image {
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/background/sierra.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: 1;
+}
+
+#opaque {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: black;
+  opacity: 0.75;
+  z-index: 2;
+}
+
+#content {
+  top: 40%;
+  width: 100%;
+  color: white;
+  cursor: default;
+  font-size: 50px;
+  font-weight: 200;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  position: fixed;
+  z-index: 4;
+}
