@@ -8,8 +8,8 @@ function timeStart() {
 function update() {
   var time = new Date();
   document.getElementById("content").innerHTML = ""
-    + getFixedTime(time.getUTCHours()) + ":" + getFixedTime(time.getUTCMinutes()) + ":" + getFixedTime(time.getUTCSeconds()) + " " + getAMPM(time.getHours()) + "<br>"
-    + getDayName(time.getUTCDay()) + " " + time.getUTCDate() + " " + getMonthName(time.getUTCMonth()) + " " + time.getUTCFullYear();
+    + getFixedTime(time.getHours()) + ":" + getFixedTime(time.getMinutes()) + ":" + getFixedTime(time.getSeconds()) + "<br>"
+    + getDayName(time.getDay()) + " " + time.getDate() + " " + getMonthName(time.getMonth()) + " " + time.getFullYear();
 }
 
 function getFixedTime(time) {
@@ -17,13 +17,6 @@ function getFixedTime(time) {
     return "0" + time;
   }
   return time;
-}
-
-function getAMPM(hour) {
-  if (hour > 12) {
-    return "PM"
-  }
-  return "AM";
 }
 
 function getDayName(day) {
