@@ -32,7 +32,7 @@ body {
 }
 
 #content {
-  top: 25%;
+  margin-top: 10%;
   width: 100%;
   color: white;
   cursor: default;
@@ -40,6 +40,6 @@ body {
   font-weight: 200;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  position: fixed;
+  position: absolute;
   z-index: 4;
 }
