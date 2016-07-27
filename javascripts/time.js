@@ -7,7 +7,7 @@ function timeStart() {
 
 function update() {
   var time = new Date();
-  document.getElementById("content").innerHTML = ""
+  document.getElementById("time").innerHTML = ""
     + getFixedTime(time.getHours()) + ":" + getFixedTime(time.getMinutes()) + ":" + getFixedTime(time.getSeconds()) + "<br>"
     + getDayName(time.getDay()) + " " + time.getDate() + " " + getMonthName(time.getMonth()) + " " + time.getFullYear();
 }

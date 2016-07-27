@@ -12,6 +12,15 @@ body {
   overflow: hidden;
 }
 
+p {
+  color: white;
+  cursor: default;
+  font-size: 50px;
+  font-weight: 200;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
 #image {
   height: 100%;
   width: 100%;
@@ -34,12 +43,16 @@ body {
 #content {
   margin-top: 10%;
   width: 100%;
-  color: white;
-  cursor: default;
-  font-size: 50px;
-  font-weight: 200;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
   position: absolute;
+  z-index: 3;
+}
+
+#banner {
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+  background-color: black;
+  opacity: 1;
+  position: fixed;
   z-index: 4;
 }
