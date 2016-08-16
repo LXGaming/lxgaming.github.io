@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+
+p {
+  color: white;
+  cursor: default;
+  font-size: 35px;
+  font-weight: 200;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  color: red;
+  cursor: default;
+  font-size: 100px;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#image {
+  height: 100%;
+  width: 100%;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: 1;
+}
+
+#opaque {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+#content {
+  margin-top: 5%;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+}
+
+#banner {
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+  background-color: black;
+  opacity: 1;
+  position: fixed;
+  z-index: 4;
+}
