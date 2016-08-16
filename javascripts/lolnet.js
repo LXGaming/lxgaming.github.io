@@ -50,8 +50,8 @@ function checkLolnet() {
 }
 
 function background() {
-  var random = Math.floor(Math.random() * (5 - 0 + 1) + 0);
-  document.getElementById("image").style = "background-image:url(images/background/lolnetbg" + random + ".png);background-size:cover;background-repeat:no-repeat;"
+  var image = "url(images/background/lolnetbg" + Math.floor(Math.random() * (5 - 0 + 1) + 0) + ".png)";
+  document.getElementById("image").style.backgroundImage = image;
 }
 
 function message() {
