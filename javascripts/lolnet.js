@@ -19,13 +19,13 @@ function checkLolnet() {
 	  if (json.online == true) {
 		document.getElementById("status").innerHTML = "Yes";
         document.getElementById("status").style.color = "Green";
-		document.getElementById("message").innerHTML = "Currently " + json.players.now + " players online."
+		document.getElementById("message").innerHTML = "Currently " + json.players.now + " players online.<p style='font-Size:25;'>Connect via <a style='text-decoration:none;color:deepskyblue;font-Weight:400;' href='https://www.lolnet.co.nz/'>play.lolnet.co.nz</a></p>"
 	  } else {
         document.getElementById("status").innerHTML = "No";
         document.getElementById("status").style.color = "Red";
-		document.getElementById("social").innerHTML = "<br>Facebook: <a style='text-decoration:none;color:deepskyblue;' href='https://www.facebook.com/lolnetNZ/'>lolnetNZ</a><br> Twitter: <a style='text-decoration:none;color:deepskyblue;' href='https://twitter.com/lolnetnz'>@lolnetNZ</a>";
 		message();
 	  }
+	  document.getElementById("social").innerHTML = "<br>Facebook: <a style='text-decoration:none;color:deepskyblue;' href='https://www.facebook.com/lolnetNZ/'>lolnetNZ</a><br> Twitter: <a style='text-decoration:none;color:deepskyblue;' href='https://twitter.com/lolnetnz'>@lolnetNZ</a>";
 	  return;
     }
 	
@@ -45,7 +45,7 @@ function checkLolnet() {
       document.getElementById("status").style.color = "Orange";
   }
   
-  httpRequest.open("GET", "https://mcapi.us/server/status?ip=lolnet.co.nz&port=25565", true);
+  httpRequest.open("GET", "https://mcapi.us/server/status?ip=huxley.lolnet.co.nz&port=25565", true);
   httpRequest.send();
 }
 
