@@ -21,7 +21,7 @@ function getFixedTime(time) {
 
 function getDayName(day) {
   if (day == 0) {
-    return "Error";
+    return "Sunday";
   } else if (day == 1) {
     return "Monday";
   } else if (day == 2) {
@@ -34,8 +34,6 @@ function getDayName(day) {
     return "Friday";
   } else if (day == 6) {
     return "Saturday";
-  } else if (day == 7) {
-    return "Sunday";
   }
   return "Error";
 }
