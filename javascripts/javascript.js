@@ -1,3 +1,10 @@
+function onLoad() {
+	var host = "lxgaming.github.io"
+	if (window.location.host == host && window.location.protocol != "https:") {
+		window.location.protocol = "https:";
+	}
+}
+
 function Image() {
 	var image = document.getElementById("image").style;
 	image.background = "url(images/background/code.jpg)";
