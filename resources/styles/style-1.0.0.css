@@ -76,7 +76,26 @@ h2 {
 }
 
 .title {
+    top: 0px;
     margin-top: 15%;
     margin-left: 15%;
     position: absolute;
+}
+
+.repo {
+    font-size: 20px;
+}
+
+.repo > a {
+    color: #00BFFF;
+    text-decoration: none;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
