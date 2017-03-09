@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+body {
+    max-height: 100%;
+    max-width: 100%;
+    background-color: #23272A;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+p {
+    color: #FFFFFF;
+    cursor: default;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    color: #FFFFFF;
+    cursor: default;
+    font-size: 70px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    color: #FFFFFF;
+    cursor: default;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    color: #FFFFFF;
+    cursor: default;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.brand {
+    margin-top: -6px;
+}
+
+.social {
+    padding: 10px;
+}
+
+.content {
+    min-height: 400px;
+    height: 100%;
+    width: 100%;
+    padding-top: 54px;
+    position: relative;
+    overflow: hidden;
+}
+
+.opaque {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-color: black;
+	opacity: 0.5;
+}
+
+.title {
+    margin-top: 15%;
+    margin-left: 15%;
+    position: absolute;
+}
