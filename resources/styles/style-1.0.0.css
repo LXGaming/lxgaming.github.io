@@ -52,10 +52,12 @@ h2 {
 
 .brand {
     margin-top: -6px;
+	height: 32px;
 }
 
 .social {
     padding: 10px;
+	height: 32px;
 }
 
 .content {
