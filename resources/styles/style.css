@@ -19,6 +19,11 @@ a {
     text-decoration: none;
 }
 
+a:focus {
+    color: #00BFFF;
+    text-decoration: none;
+}
+
 a:hover {
     cursor: pointer;
     color: #0098CC;
