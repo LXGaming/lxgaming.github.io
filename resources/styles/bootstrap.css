@@ -1,8 +1,11 @@
 .navbar-default {
     min-height: 54px;
+    min-width: 100%;
     background-color: #2C2F33;
     border: none;
     border-color: #23272A;
+    margin: 0px;
+    position: absolute;
 }
 
 .navbar-default .navbar-brand {
@@ -121,4 +124,9 @@
         color: #00BFFF;
         background-color: #23272A;
     }
+}
+
+.container-fluid {
+    margin-left: 10%;
+    margin-right: 10%;
 }

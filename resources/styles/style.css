@@ -11,11 +11,18 @@ html {
 body {
     max-height: 100%;
     max-width: 100%;
-    background-color: #23272A;
-    background-image: url("../images/background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     overflow: auto;
+}
+
+a {
+    color: #00BFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #0098CC;
+    text-decoration: none;
 }
 
 p {
@@ -50,22 +57,41 @@ h2 {
     font-family: 'Open Sans', sans-serif;
 }
 
+.background-image {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background-color {
+    background-color: #23272A;
+}
+
 .brand {
+    font-size: 20px;
+}
+
+.brand > a > img {
     margin-top: -6px;
 	height: 32px;
 }
 
-.social {
-    padding: 10px;
+.brand > a > p {
+    font-size: 20px;
+}
+
+.brand:hover > a > p {
+    cursor: pointer;
+    color: #00BFFF;
+    text-decoration: none;
 }
 
 .content {
-    min-height: 400px;
+    min-height: 500px;
     height: 100%;
     width: 100%;
-    padding-top: 54px;
+    padding-top: 10px;
     position: relative;
-    overflow: hidden;
 }
 
 .opaque {
@@ -76,20 +102,54 @@ h2 {
 	opacity: 0.5;
 }
 
-.title {
+.repo {
     top: 0px;
     margin-top: 15%;
     margin-left: 15%;
     position: absolute;
 }
 
-.repo {
+.repo > h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.repo > h2 {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0px;
+}
+
+.repo > p {
     font-size: 20px;
 }
 
-.repo > a {
-    color: #00BFFF;
-    text-decoration: none;
+.commit {
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.commit > ul {
+    list-style: none;
+}
+
+.commit > ul > li {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.commit > ul > li > p {
+    font-size: 15px;
+    padding-left: 25px;
+    display: block;
+}
+
+.commit > ul > li > h2 {
+    font-size: 20px;
 }
 
 .noselect {

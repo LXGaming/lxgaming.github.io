@@ -1,23 +1,23 @@
 <html>
     <head>
         <title>LX_Gaming</title>
-        <meta name="description" content="Alex Thomsons GitHub page, I'm from New Zealand and learning to develop applications in C#, C++, Java and many more languages."/>
+        <meta name="description" content="Welcome to LX_Gaming's GitHub page."/>
         <meta name="keywords" content="Programming,Coding,Java,C#,CSharp,C++,CPlusPlus,Powershell,HTML,CSS,JavaScript,Minecraft,Modding,Spigot,Plugins"/>
         <meta name="author" content="Alex Thomson"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
         <link rel="shortcut icon" type="image/png" href="https://lxgaming.github.io/resources/images/icon.png">
-        <link rel="stylesheet" type="text/css" href="https://lxgaming.github.io/resources/styles/font-1.0.0.css">
+        <link rel="stylesheet" type="text/css" href="https://lxgaming.github.io/resources/styles/font.css">
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="https://lxgaming.github.io/resources/styles/bootstrap-1.0.0.css">
-        <link rel="stylesheet" type="text/css" href="https://lxgaming.github.io/resources/styles/style-1.0.0.css">
+        <link rel="stylesheet" type="text/css" href="https://lxgaming.github.io/resources/styles/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="https://lxgaming.github.io/resources/styles/style.css">
         <script src="https://lxgaming.github.io/resources/scripts/jquery-3.2.1.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="https://lxgaming.github.io/resources/scripts/script-1.0.0.js"></script>
+        <script src="https://lxgaming.github.io/resources/scripts/script.js"></script>
     </head>
-    <body onLoad="load()">
-        <nav class="navbar navbar-default navbar-fixed-top noselect">
+    <body onLoad="load()" class="background-color noselect">
+        <nav class="navbar navbar-default navbar-static-top">
             <div class="container-fluid">
-                <div class="navbar-header">
+                <div class="navbar-header brand">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -25,64 +25,57 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="https://github.com/LXGaming">
-                        <img class="brand" src="https://lxgaming.github.io/resources/images/github.png" alt="GitHub">
+                        <img src="https://lxgaming.github.io/resources/images/github.png" alt="GitHub">
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li data-toggle="tooltip" title="Support me on Patreon" data-placement="bottom">
+                        <li class="brand">
+                            <a  href="https://twitter.com/alexrobthomson">
+                                <img src="https://lxgaming.github.io/resources/images/twitter.png" alt="Twitter">
+                                <p class="visible-xs-inline-block">&nbsp;Twitter</p>
+                            </a>
+                        </li>
+                        <li class="brand">
+                            <a href="https://www.youtube.com/channel/UC_OJ3TdUstKz8XOpmg1A3yQ">
+                                <img src="https://lxgaming.github.io/resources/images/youtube.png" alt="YouTube">
+                                <p class="visible-xs-inline-block">&nbsp;Youtube</p>
+                            </a>
+                        </li>
+                        <li class="brand">
+                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CZUUA6LE7YS44&item_name=LX_Gaming+(from+lxgaming.github.io)">
+                                <img src="https://lxgaming.github.io/resources/images/paypal.png" alt="PayPal">
+                                <p class="visible-xs-inline-block">&nbsp;PayPal</p>
+                            </a>
+                        </li>
+                        <li class="brand">
                             <a href="https://www.patreon.com/lxgaming">
-                                <img class="brand" src="https://lxgaming.github.io/resources/images/patreon.png" alt="Patreon">
+                                <img src="https://lxgaming.github.io/resources/images/patreon.png" alt="Patreon">
+                                <p class="visible-xs-inline-block">&nbsp;Patreon</p>
                             </a>
-                        </li>
-                        <li data-toggle="tooltip" title="Donate with PayPal" data-placement="bottom">
-                            <a id="PayPal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CZUUA6LE7YS44&item_name=LX_Gaming+(from+lxgaming.github.io)">
-                                <img class="brand" src="https://lxgaming.github.io/resources/images/paypal.png" alt="PayPal">
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                <img class="brand" src="https://lxgaming.github.io/resources/images/share.png" alt="Social">
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="https://twitter.com/alexrobthomson">
-                                        <img class="social" src="https://lxgaming.github.io/resources/images/twitter.png" alt="Twitter">
-                                        <span>Twitter</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/alexrobthomson">
-                                        <img class="social" src="https://lxgaming.github.io/resources/images/linkedin.png" alt="Linkedin">
-                                        <span>Linkedin</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.youtube.com/channel/UC_OJ3TdUstKz8XOpmg1A3yQ">
-                                        <img class="social" src="https://lxgaming.github.io/resources/images/youtube.png" alt="YouTube">
-                                        <span>YouTube</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.twitch.tv/lx_gaming">
-                                        <img class="social" src="https://lxgaming.github.io/resources/images/twitch.png" alt="Twitch">
-                                        <span>Twitch</span>
-                                    </a>
-                                </li>
-                            </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="content noselect">
+        <div class="background-image content">
             <div class="opaque"></div>
-            <div class="title">
-                <h2>&nbsp;Alex Thomson</h2>
-                <p>&lt;Software Engineer/&gt;</p>
+            <div class="repo">
+                <h1>&nbsp;Alex Thomson</h1>
+                <h2>&lt;Software Engineer/&gt;</h2>
                 <hr>
-                <p class="repo" id="pushed">Recently Pushed - Loading...</p>
-                <p class="repo" id="created">Recently Created - Loading...</p>
+                <p id="pushed">Recently Pushed - Loading...</p>
+                <p id="created">Recently Created - Loading...</p>
+            </div>
+        </div>
+        <div class="background-color content">
+            <div class="commit">
+                <h2>Commits</h2>
+                <ul id="commit">
+                    <li>
+                        <h2>Loading...</h2>
+                    </li>
+                </ul>
             </div>
         </div>
     </body>
