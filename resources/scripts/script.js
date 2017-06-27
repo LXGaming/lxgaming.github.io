@@ -30,6 +30,10 @@ function processEvents(data) {
     document.getElementById("commit").innerHTML = "";
     var jsonObject = JSON.parse(data);
     for (var index = 0; index < jsonObject.length; index++) {
+        if (!jsonObject[index].hasOwnProperty("type") || jsonObject[index]["type"] !== "PushEvent") {
+            continue;
+        }
+
         var commitData = new Object();
         commitData.name = jsonObject[index]["repo"]["name"];
         commitData.user = commitData.name.split("/")[0];
