@@ -1,160 +1,114 @@
-* {
-    margin: 0;
-    padding: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    cursor: default;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
+h3,
+h4 {
+    font-weight: 600;
+}
+
+h5,
+h6 {
+    font-weight: 400;
+}
+
+p {
+    font-size: 20px;
+}
+
+small {
+    font-size: 16px;
+}
+
+body,
 html {
     max-height: 100%;
     max-width: 100%;
 }
 
 body {
-    max-height: 100%;
-    max-width: 100%;
-    overflow: auto;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 a {
-    color: #00BFFF;
+    color: #039BE5;
     text-decoration: none;
+    text-transform: none;
 }
 
 a:focus {
-    color: #00BFFF;
+    color: #006AD1;
     text-decoration: none;
+    text-transform: none;
 }
 
 a:hover {
+    color: #006AD1;
     cursor: pointer;
-    color: #0098CC;
     text-decoration: none;
+    text-transform: none;
 }
 
-p {
-    color: #FFFFFF;
-    cursor: default;
-    font-size: 30px;
-    font-weight: 300;
-    font-family: 'Open Sans', sans-serif;
+hr {
+    border: 0px;
+    border-top: 1px solid #FFFFFF;
 }
 
-h1 {
-    color: #FFFFFF;
-    cursor: default;
-    font-size: 70px;
-    font-weight: 700;
-    font-family: 'Open Sans', sans-serif;
+.active > .dark {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-h2 {
-    color: #FFFFFF;
-    cursor: default;
-    font-size: 60px;
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
+.btn-floating > img {
+    height: 32px;
+    margin-top: 12px;
 }
 
-h2 {
-    color: #FFFFFF;
-    cursor: default;
-    font-size: 40px;
-    font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
+.collection {
+    border: none;
 }
 
-.background-image {
-    background-image: url("../images/background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+.collection > .collection-header > h2 {
+    font-size: 2rem;
 }
 
-.background-color {
-    background-color: #23272A;
+.collection > .collection-header > h2 > a {
+    text-transform: uppercase;
 }
 
-.brand {
-    font-size: 20px;
+.collection > .collection-item > h4 {
+    font-size: 1.2rem;
 }
 
-.brand > a > img {
-    margin-top: -6px;
-	height: 32px;
+.collection > .collection-item > h6 {
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
-.brand > a > p {
-    font-size: 20px;
-}
-
-.brand:hover > a > p {
-    cursor: pointer;
-    color: #00BFFF;
-    text-decoration: none;
-}
-
-.content {
-    min-height: 500px;
-    height: 100%;
-    width: 100%;
-    padding-top: 10px;
-    position: relative;
-}
-
-.opaque {
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	background-color: black;
-	opacity: 0.5;
-}
-
-.repo {
-    top: 0px;
-    margin-top: 15%;
-    margin-left: 15%;
-    position: absolute;
-}
-
-.repo > h1 {
-    font-size: 40px;
-    font-weight: 400;
-}
-
-.repo > h2 {
-    font-size: 30px;
-    font-weight: 300;
-    margin: 0px;
-}
-
-.repo > p {
-    font-size: 20px;
-}
-
-.commit {
-    text-align: center;
-    padding-bottom: 10%;
-}
-
-.commit > ul {
-    list-style: none;
-}
-
-.commit > ul > li {
-    max-width: 100%;
-    margin-top: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
+.collection > .collection-item {
     margin-bottom: 20px;
-    text-align: left;
 }
 
-.commit > ul > li > p {
-    font-size: 15px;
-    padding-left: 25px;
-    display: block;
+.dark {
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
-.commit > ul > li > h2 {
-    font-size: 20px;
+.dark:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.secondary-content {
+    color: #000000;
 }
 
 .noselect {
@@ -164,4 +118,41 @@ h2 {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.particles {
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    display: block;
+    position: fixed;
+    z-index: -1;
+}
+
+.title {
+    margin-top: -10%;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.scroll {
+    bottom: 23px;
+    position: absolute;
+}
+
+.commits {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    padding-top: 5%;
 }
