@@ -13,7 +13,7 @@ function createHttpRequest(url, callback) {
 
 function getPublicEventsData(xhr, status) {
     if (status !== "success") {
-        Materialize.toast("Encountered an error loading public event data!", 2000);
+        Materialize.toast("An error occurred", 5000);
         return;
     }
 
@@ -132,7 +132,7 @@ function getPushData(array, jsonObject) {
 }
 
 function formatHeader(name) {
-    let element = "<h2><a href=\"[ACTOR_URL]\">[ACTOR]</a> / <a href=\"[REPO_URL]\">[REPO]</a></h2>";
+    let element = "<h2 class=\"truncate\"><a href=\"[ACTOR_URL]\">[ACTOR]</a> / <a href=\"[REPO_URL]\">[REPO]</a></h2>";
     if (!name || name.split("/").length != 2) {
         return element.replace("[ACTOR_URL]", "#").replace("[ACTOR]", "Unknown").replace("[REPO_URL]", "#").replace("[REPO]", "Unknown");
     }

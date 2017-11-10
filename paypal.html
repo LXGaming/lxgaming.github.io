@@ -5,7 +5,7 @@
         <meta name="description" content="Welcome to LX_Gaming's GitHub page.">
         <meta name="keywords" content="LX,LXGaming,LX_Gaming,NZ,NewZealand,New Zealand,Coding,Dev,Development,Mod,Mods,Modding,Programming,C#,CSharp,C++,CPlusPlus,Java,Powershell,HTML,CSS,JavaScript,Minecraft,Bukkit,Bungee,FML,Forge,Spigot,Sponge,Plugins">
         <meta name="author" content="Alex Thomson">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link rel="apple-touch-icon" type="image/png" href="./resources/images/apple-touch-icon.png">
         <link rel="shortcut icon" type="image/ico" href="./resources/images/favicon.ico">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700">
@@ -17,13 +17,19 @@
         <script src="./resources/scripts/particles.js"></script>
     </head>
     <body class="noselect" onLoad="initializeParticles()" onResize="updateCanvas()">
-        <canvas class="particles"></canvas>
-        <div class="wrapper valign-wrapper">
-            <div class="title">
-                <h2>Thank you for your donation.</h2>
-                <hr>
-                <p>Your transaction has been completed, and a receipt for your purchase has been emailed to you.</p>
-                <p>You may log into your account at <a href="https://www.paypal.com/">www.paypal.com</a> to view details of this transaction.</p>
+        <canvas class="particles hide-on-small-only"></canvas>
+        <div class="fixed-action-btn click-to-toggle">
+            <a class="btn-floating btn-flat btn-large waves-effect waves-light dark" href="https://lxgaming.github.io/">
+                <img src="./resources/images/github.png" alt="GitHub">
+            </a>
+        </div>
+        <div class="section no-pad-bot valign-wrapper">
+            <div class="container">
+                <h3 class="header white-text">Thank you for your donation.</h3>
+                <div class="row">
+                    <h6 class="header col s12 white-text">Your transaction has been completed, and a receipt for your purchase has been emailed to you.</h6>
+                    <h6 class="header col s12 white-text">You may log into your account at <a href="https://www.paypal.com/">www.paypal.com</a> to view details of this transaction.</h6>
+                </div>
             </div>
         </div>
     </body>

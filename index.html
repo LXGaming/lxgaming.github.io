@@ -5,7 +5,7 @@
         <meta name="description" content="Welcome to LX_Gaming's GitHub page.">
         <meta name="keywords" content="LX,LXGaming,LX_Gaming,NZ,NewZealand,New Zealand,Coding,Dev,Development,Mod,Mods,Modding,Programming,C#,CSharp,C++,CPlusPlus,Java,Powershell,HTML,CSS,JavaScript,Minecraft,Bukkit,Bungee,FML,Forge,Spigot,Sponge,Plugins">
         <meta name="author" content="Alex Thomson">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link rel="apple-touch-icon" type="image/png" href="./resources/images/apple-touch-icon.png">
         <link rel="shortcut icon" type="image/ico" href="./resources/images/favicon.ico">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700">
@@ -20,7 +20,7 @@
         <script src="./resources/scripts/script.js"></script>
     </head>
     <body class="noselect" onLoad="onLoad()" onResize="onResize()">
-        <canvas class="particles"></canvas>
+        <canvas class="particles hide-on-small-only"></canvas>
         <div class="fixed-action-btn click-to-toggle">
             <a class="btn-floating btn-flat btn-large waves-effect waves-light dark">
                 <i class="material-icons">menu</i>
@@ -48,18 +48,20 @@
                 </li>
             </ul>
         </div>
-        <div class="wrapper valign-wrapper">
-            <div class="title">
-                <h2>Alex Thomson</h2>
-                <h3>&lt;Software Engineer/&gt;</h3>
-                <hr>
-                <a class="btn-floating btn-flat btn-large pulse dark scroll hide"><i class="material-icons">keyboard_arrow_down</i></a>
+        <div class="section no-pad-bot valign-wrapper">
+            <div class="container">
+                <h2 class="header white-text">Alex Thomson</h2>
+                <div class="row">
+                    <h3 class="header col s12 white-text">&lt;Software Engineer/&gt;</h3>
+                </div>
+                <div class="row hide-on-small-only hide">
+                    <a class="btn-floating btn-flat btn-large pulse dark scroll"><i class="material-icons">keyboard_arrow_down</i></a>
+                </div>
             </div>
         </div>
-        <div class="wrapper hide">
-            <div class="commits">
-                <ul class="collection with-header">
-                </ul>
+        <div class="section no-pad-bot">
+            <div class="container">
+                <ul class="collection with-header"></ul>
             </div>
         </div>
     </body>

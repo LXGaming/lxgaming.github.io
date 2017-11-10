@@ -24,10 +24,7 @@ h6 {
 
 p {
     font-size: 20px;
-}
-
-small {
-    font-size: 16px;
+    text-transform: none;
 }
 
 body,
@@ -37,6 +34,9 @@ html {
 }
 
 body {
+    background-attachment: fixed;
+    background-image: url("../images/background.png");
+    background-size: cover;
     margin: 0 auto;
     overflow-x: hidden;
     overflow-y: auto;
@@ -45,25 +45,17 @@ body {
 a {
     color: #039BE5;
     text-decoration: none;
-    text-transform: none;
 }
 
 a:focus {
     color: #006AD1;
     text-decoration: none;
-    text-transform: none;
 }
 
 a:hover {
     color: #006AD1;
     cursor: pointer;
     text-decoration: none;
-    text-transform: none;
-}
-
-hr {
-    border: 0px;
-    border-top: 1px solid #FFFFFF;
 }
 
 .active > .dark {
@@ -81,6 +73,7 @@ hr {
 
 .collection > .collection-header > h2 {
     font-size: 2rem;
+    text-align: left;
 }
 
 .collection > .collection-header > h2 > a {
@@ -98,6 +91,12 @@ hr {
 
 .collection > .collection-item {
     margin-bottom: 20px;
+    text-align: left;
+}
+
+.container {
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .dark {
@@ -106,10 +105,6 @@ hr {
 
 .dark:hover {
     background-color: rgba(0, 0, 0, 0.5);
-}
-
-.secondary-content {
-    color: #000000;
 }
 
 .noselect {
@@ -124,20 +119,9 @@ hr {
 .particles {
     height: 100%;
     width: 100%;
-    background-image: url("../images/background.png");
-    background-size: cover;
     display: block;
     position: fixed;
     z-index: -1;
-}
-
-.title {
-    margin-top: -10%;
-    color: #FFFFFF;
-    display: block;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .scroll {
@@ -145,15 +129,12 @@ hr {
     position: absolute;
 }
 
-.commits {
-    width: 75%;
-    margin-right: auto;
-    margin-left: auto;
+.secondary-content {
+    color: #000000;
 }
 
-.wrapper {
+.section {
     width: 100%;
     height: 100%;
     min-height: 400px;
-    padding-top: 5%;
 }

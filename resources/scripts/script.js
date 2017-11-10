@@ -3,7 +3,7 @@ function onLoad() {
     initializeGitHub();
     $(".scroll").click(function() {
         $("html, body").animate({
-            scrollTop: $(".commits").offset().top
+            scrollTop: $(".collection").offset().top
         }, 2000);
     });
 }

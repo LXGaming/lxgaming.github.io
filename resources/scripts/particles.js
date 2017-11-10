@@ -1,7 +1,8 @@
 /* Script Settings */
-var particleColor = "rgba(0, 160, 209, 1)";
 var movementSpeed = 0.5;
+var particleColor = "rgba(0, 160, 209, 1)";
 var particleCount = 250;
+var renderCanvas = true;
 
 /* Script Variables */
 var canvas;
@@ -18,9 +19,22 @@ function initializeParticles() {
 }
 
 function updateCanvas() {
-    if (canvas != null && (canvas.width != window.innerWidth || canvas.height != window.innerHeight)) {
+    if (!canvas) {
+        return;
+    }
+
+    if ((canvas.width != window.innerWidth || canvas.height != window.innerHeight)) {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
+    }
+
+    if ($(canvas).is(":visible")) {
+        if (!renderCanvas) {
+            renderCanvas = true;
+            render();
+        }
+    } else {
+        renderCanvas = false;
     }
 }
 
@@ -28,7 +42,10 @@ function render() {
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.fillStyle = particleColor;
     updateParticles();
-    renderFrame(render);
+
+    if (renderCanvas) {
+        renderFrame(render);
+    }
 }
 
 function renderFrame(callback) {
