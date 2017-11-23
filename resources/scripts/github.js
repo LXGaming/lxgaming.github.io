@@ -119,9 +119,9 @@ function getPushData(array, jsonObject) {
         data.header = formatHeader(jsonObject.repo.name);
         data.identifier = formatIdentifier(getCommitHash(jsonObject.payload.commits[index].sha), getUrl(jsonObject.repo.name) + "commit/" + jsonObject.payload.commits[index].sha);
 
-        if (jsonObject.payload.commits[index].message && jsonObject.payload.commits[index].message.split("\n\n").length > 1) {
-            data.title = formatTitle(jsonObject.payload.commits[index].message.split("\n\n")[0]);
-            data.message = formatMessage(jsonObject.payload.commits[index].message.split("\n\n").slice(1).join("\n").replace("\n", "<br>"));
+        if (jsonObject.payload.commits[index].message && jsonObject.payload.commits[index].message.split(/\n\n/g).length > 1) {
+            data.title = formatTitle(jsonObject.payload.commits[index].message.split(/\n\n/g)[0]);
+            data.message = formatMessage(jsonObject.payload.commits[index].message.split(/\n\n/g).slice(1).join(/\n/g).replace(/\n/g, "<br>"));
         } else {
             data.title = formatTitle(jsonObject.payload.commits[index].message);
         }
