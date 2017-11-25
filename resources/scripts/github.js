@@ -110,6 +110,10 @@ function getPushData(array, jsonObject) {
         return;
     }
 
+    if (jsonObject.payload.commits.length > 1) {
+        jsonObject.payload.commits.reverse();
+    }
+
     for (let index = 0; index < jsonObject.payload.commits.length; index++) {
         if (!jsonObject.actor || !jsonObject.repo || !jsonObject.payload.commits[index]) {
             continue;
