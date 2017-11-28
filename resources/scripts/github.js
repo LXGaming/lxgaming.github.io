@@ -55,6 +55,7 @@ function getPublicEventsData(xhr, status) {
         $(".collection").append(header, item);
     }
 
+    $("time.timeago").timeago();
     $(".hide").removeClass("hide");
 }
 
@@ -174,12 +175,12 @@ function formatMessage(message) {
 }
 
 function formatFooter(actor, created) {
-    let element = "<span class=\"secondary-content\"><h6><a href=\"[ACTOR_URL]\">[ACTOR]</a> - [CREATED]</h6></span>"
+    let element = "<span class=\"secondary-content\"><h6><a href=\"[ACTOR_URL]\">[ACTOR]</a> - <time class=\"timeago\" datetime=\"[CREATED]\"></time></h6></span>"
     if (!actor || !created) {
         return element.replace("[ACTOR_URL]", "#").replace("[ACTOR]", "Unknown").replace("[CREATED]", "Unknown");
     }
 
-    return element.replace("[ACTOR_URL]", getUrl(actor)).replace("[ACTOR]", actor).replace("[CREATED]", moment(created).fromNow());
+    return element.replace("[ACTOR_URL]", getUrl(actor)).replace("[ACTOR]", actor).replace("[CREATED]", created);
 }
 
 function getUrl(name) {
