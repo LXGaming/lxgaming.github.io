@@ -15,8 +15,9 @@
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js" integrity="sha384-C5yXM3HiWa6a8kI2Jd4LuuwmOGAVgJw0YSmuRXN+PLT5Jln26ddUnPQxkInM/w2x" crossorigin="anonymous"></script>
         <script src="./resources/scripts/particles.js"></script>
+        <script src="./resources/scripts/script.js"></script>
     </head>
-    <body class="noselect" onLoad="initializeParticles()" onResize="updateCanvas()">
+    <body class="noselect" onLoad="onLoad(types.PAYPAL)" onResize="onResize(types.PAYPAL)">
         <canvas class="particles hide-on-small-only"></canvas>
         <div class="fixed-action-btn click-to-toggle">
             <a class="btn-floating btn-flat btn-large waves-effect waves-light dark" href="https://lxgaming.github.io/">

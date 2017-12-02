@@ -1,6 +1,21 @@
-function onLoad() {
+var types = {
+    GITHUB: "GitHub",
+    PAYPAL: "PayPal"
+};
+
+function onLoad(type) {
     initializeParticles();
-    initializeGitHub();
+
+    if (!type) {
+        Materialize.toast("Error: undefined type");
+    } else if (type === types.GITHUB) {
+        initializeGitHub();
+    } else if (type === types.PAYPAL) {
+        return;
+    } else {
+        Materialize.toast("Error: unknown type");
+    }
+
     $(".scroll").click(function() {
         $("html, body").animate({
             scrollTop: $(".collection").offset().top
@@ -20,6 +35,15 @@ function onLoad() {
     });
 }
 
-function onResize() {
+function onResize(type) {
     updateCanvas();
+}
+
+function createHttpRequest(url, callback) {
+    $.ajax({
+        dataType: "json",
+        url: url,
+        type: "GET",
+        complete: callback
+    });
 }

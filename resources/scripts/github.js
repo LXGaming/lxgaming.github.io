@@ -2,34 +2,25 @@ function initializeGitHub() {
     createHttpRequest("https://api.github.com/users/LXGaming/events/public", getPublicEventsData);
 }
 
-function createHttpRequest(url, callback) {
-    $.ajax({
-        dataType: "json",
-        url: url,
-        type: "GET",
-        complete: callback
-    })
-}
-
 function getPublicEventsData(xhr, status) {
     if (status !== "success") {
         Materialize.toast("An error occurred", 5000);
         return;
     }
 
-    let jsonObject = xhr.responseJSON;
+    let data = xhr.responseJSON;
     let array = new Array();
-    for (let index = 0; index < jsonObject.length; index++) {
-        if (!jsonObject[index]) {
+    for (let index = 0; index < data.length; index++) {
+        if (!data[index]) {
             continue;
-        } else if (jsonObject[index].type === "CreateEvent") {
-            getCreateData(array, jsonObject[index]);
-        } else if (jsonObject[index].type === "IssueCommentEvent") {
-            getIssueCommentData(array, jsonObject[index]);
-        } else if (jsonObject[index].type === "IssuesEvent") {
-            getIssuesData(array, jsonObject[index]);
-        } else if (jsonObject[index].type === "PushEvent") {
-            getPushData(array, jsonObject[index])
+        } else if (data[index].type === "CreateEvent") {
+            getCreateData(array, data[index]);
+        } else if (data[index].type === "IssueCommentEvent") {
+            getIssueCommentData(array, data[index]);
+        } else if (data[index].type === "IssuesEvent") {
+            getIssuesData(array, data[index]);
+        } else if (data[index].type === "PushEvent") {
+            getPushData(array, data[index])
         }
     }
 
