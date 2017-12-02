@@ -14,6 +14,7 @@
         <link rel="stylesheet" type="text/css" href="./resources/styles/style.css">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js" integrity="sha384-C5yXM3HiWa6a8kI2Jd4LuuwmOGAVgJw0YSmuRXN+PLT5Jln26ddUnPQxkInM/w2x" crossorigin="anonymous"></script>
+        <script src="./resources/scripts/jquery.konami.min.js"></script>
         <script src="./resources/scripts/jquery.timeago.js"></script>
         <script src="./resources/scripts/particles.js"></script>
         <script src="./resources/scripts/github.js"></script>
@@ -21,7 +22,7 @@
     </head>
     <body class="noselect" onLoad="onLoad()" onResize="onResize()">
         <canvas class="particles hide-on-small-only"></canvas>
-        <div class="fixed-action-btn click-to-toggle">
+        <div class="fixed-action-btn click-to-toggle visibility">
             <a class="btn-floating btn-flat btn-large waves-effect waves-light dark">
                 <i class="material-icons">menu</i>
             </a>
@@ -53,7 +54,7 @@
                 </li>
             </ul>
         </div>
-        <div class="section no-pad-bot valign-wrapper">
+        <div class="section no-pad-bot valign-wrapper visibility">
             <div class="container">
                 <h2 class="header white-text">Alex Thomson</h2>
                 <div class="row">
@@ -64,7 +65,7 @@
                 </div>
             </div>
         </div>
-        <div class="section no-pad-bot hide">
+        <div class="section no-pad-bot hide visibility">
             <div class="container">
                 <ul class="collection with-header"></ul>
             </div>
