@@ -128,7 +128,7 @@ function getPushData(array, jsonObject) {
 }
 
 function formatHeader(name) {
-    let element = "<h2 class=\"truncate\"><a href=\"[ACTOR_URL]\" target=\"_blank\">[ACTOR]</a> / <a href=\"[REPO_URL]\" target=\"_blank\">[REPO]</a></h2>";
+    let element = "<h2 class=\"truncate\"><a href=\"[ACTOR_URL]\" target=\"_blank\" rel=\"noopener\">[ACTOR]</a> / <a href=\"[REPO_URL]\" target=\"_blank\" rel=\"noopener\">[REPO]</a></h2>";
     if (!name || name.split("/").length != 2) {
         return element.replace("[ACTOR_URL]", "#").replace("[ACTOR]", "Unknown").replace("[REPO_URL]", "#").replace("[REPO]", "Unknown");
     }
@@ -139,7 +139,7 @@ function formatHeader(name) {
 }
 
 function formatIdentifier(identifier, identifierUrl) {
-    let element = "<span class=\"secondary-content\"><h6><a href=\"[IDENTIFIER_URL]\" target=\"_blank\">[IDENTIFIER]</a></h6></span>";
+    let element = "<span class=\"secondary-content\"><h6><a href=\"[IDENTIFIER_URL]\" target=\"_blank\" rel=\"noopener\">[IDENTIFIER]</a></h6></span>";
     if (!identifier) {
         return element.replace("[IDENTIFIER_URL]", "#").replace("[IDENTIFIER]", "Unknown");
     }
@@ -166,7 +166,7 @@ function formatMessage(message) {
 }
 
 function formatFooter(actor, created) {
-    let element = "<span class=\"secondary-content\"><h6><a href=\"[ACTOR_URL]\" target=\"_blank\">[ACTOR]</a> - <time class=\"timeago\" datetime=\"[CREATED]\"></time></h6></span>"
+    let element = "<span class=\"secondary-content\"><h6><a href=\"[ACTOR_URL]\" target=\"_blank\" rel=\"noopener\">[ACTOR]</a> - <time class=\"timeago\" datetime=\"[CREATED]\"></time></h6></span>"
     if (!actor || !created) {
         return element.replace("[ACTOR_URL]", "#").replace("[ACTOR]", "Unknown").replace("[CREATED]", "Unknown");
     }
