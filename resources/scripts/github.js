@@ -1,5 +1,10 @@
 function initializeGitHub() {
-    createHttpRequest("https://api.github.com/users/LXGaming/events/public", getPublicEventsData);
+    $.ajax({
+        dataType: "json",
+        url: "https://api.github.com/users/LXGaming/events/public",
+        type: "GET",
+        complete: getPublicEventsData
+    });
 }
 
 function getPublicEventsData(xhr, status) {
@@ -195,3 +200,5 @@ function getCommitHash(hash) {
         return hash.substring(0, 7);
     }
 }
+
+initializeGitHub();

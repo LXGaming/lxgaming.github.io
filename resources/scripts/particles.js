@@ -10,7 +10,7 @@ var context;
 var particles;
 
 function initializeParticles() {
-    canvas = $("canvas.particles")[0];
+    canvas = document.getElementsByClassName("particles")[0];
     context = canvas.getContext("2d");
     particles = new Array();
     updateCanvas();
@@ -28,7 +28,7 @@ function updateCanvas() {
         canvas.height = window.innerHeight;
     }
 
-    if ($(canvas).is(":visible")) {
+    if (!!(canvas.offsetWidth || canvas.offsetHeight || canvas.getClientRects().length)) {
         if (!renderCanvas) {
             renderCanvas = true;
             render();
@@ -88,3 +88,17 @@ function updateParticles() {
         particle.y += particle.vy * movementSpeed;
     }
 }
+
+if (window.attachEvent) {
+    window.attachEvent("onresize", function() {
+        updateCanvas();
+    });
+} else if (window.addEventListener) {
+    window.addEventListener("resize", function() {
+        updateCanvas();
+    }, true);
+} else {
+    console.log("Browser does not support Javascript event binding");
+}
+
+initializeParticles();
