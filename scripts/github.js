@@ -137,7 +137,7 @@ function processPushData(jsonObject) {
             user: names[0],
             repo: names[1],
             messages: commit.message.split(/\n\n/g),
-            endpoint: "commits/" + commit.sha,
+            endpoint: "commit/" + commit.sha,
             display: commit.sha.substring(0, 7)});
 
         appendFooter({
