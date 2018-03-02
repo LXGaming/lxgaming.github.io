@@ -1,0 +1,19 @@
+{
+    "name": "LXGaming",
+    "short_name": "LXGaming",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#006AD1",
+    "theme_color": "#006AD1",
+    "description": "",
+    "icons": [{
+        "src": "images/icon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    },
+    {
+        "src": "favicon.ico",
+        "sizes": "16x16 32x32 48x48",
+        "type": "image/ico"
+    }]
+}

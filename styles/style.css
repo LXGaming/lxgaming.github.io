@@ -1,0 +1,140 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    cursor: default;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: none;
+}
+
+body,
+html {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+body {
+    background-attachment: fixed;
+    background-color: #23272A;
+    background-image: url("/images/background.png");
+    background-size: cover;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+a {
+    color: #039BE5;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+}
+
+a:focus {
+    color: #006AD1;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #006AD1;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #000000;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.particles {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: fixed;
+    z-index: -1;
+}
+
+.section {
+    padding: 5%;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5em;
+    color: #FFFFFF;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.donation {
+    padding-top:15%
+}
+
+.donation > p {
+    font-size: 0.5em;
+}
+
+.changelog {
+    background: #FFFFFF;
+    display: inline-block;
+    width: 100%;
+    -webkit-box-shadow: 1px 1px 30px 1px #000000;
+    box-shadow: 1px 1px 30px 1px #000000;
+}
+
+.changelog p {
+    font-size: 0.875em;
+}
+
+.changelog > h1, h2 {
+    text-transform: uppercase;
+}
+
+.changelog > h1:first-of-type {
+    background: #1E1E1E;
+    display: block;
+    margin: 0px;
+    letter-spacing: 0.125em;
+    font-size: 1em;
+    padding: 11px 11px 11px 20px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.changelog-content {
+    padding: 15px;
+    max-height: 375px;
+    text-align: left;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.changelog-content p, h1, h2, h3, h4, h5, h6, hr {
+    margin: 5px;
+}
+
+.changelog-content h4 {
+    text-align: right;
+}
+
+.changelog-content > div {
+    display: flex;
+}
+
+.changelog-content > div > h3:last-of-type {
+    margin-left: auto;
+}
