@@ -12,7 +12,7 @@ function initializeScript() {
     }
 }
 
-function updateColor() {
+function updateColor(event) {
     if (!event || !event.type) {
         return;
     }
