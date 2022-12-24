@@ -1,0 +1,23 @@
+{
+  "subject": "acct:lxgaming@fosstodon.org",
+  "aliases": [
+    "https://fosstodon.org/@lxgaming",
+    "https://fosstodon.org/users/lxgaming"
+  ],
+  "links": [
+     {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html",
+      "href": "https://fosstodon.org/@lxgaming"
+    },
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://fosstodon.org/users/lxgaming"
+    },
+    {
+      "rel": "http://ostatus.org/schema/1.0/subscribe",
+      "template": "https://fosstodon.org/authorize_interaction?uri={uri}"
+    }
+  ]
+}
