@@ -16,7 +16,7 @@ export default function Home() {
           <div>
             <h1 className="font-semibold text-3xl">Social</h1>
           </div>
-          <div className="divide-x divide-neutral-600">
+          <div className="flex flex-wrap justify-center lg:justify-start divide-x divide-neutral-600">
             <a className="font-semibold text-xl px-3 first:pl-0 last:pr-0 transition duration-300 text-[#6364FF] hover:text-[#563ACC]" href="https://fosstodon.org/@lxgaming" target="_blank" rel="noopener">Mastodon</a>
             <a className="font-semibold text-xl px-3 first:pl-0 last:pr-0 transition duration-300 text-[#9146FF] hover:text-[#782DE6]" href="https://twitch.tv/lx_gaming" target="_blank" rel="noopener">Twitch</a>
             <a className="font-semibold text-xl px-3 first:pl-0 last:pr-0 transition duration-300 text-[#1DA1F2] hover:text-[#0488D9]" href="https://twitter.com/LXGamingNZ" target="_blank" rel="noopener">Twitter</a>
@@ -27,7 +27,7 @@ export default function Home() {
           <div>
             <h1 className="font-semibold text-3xl">Sponsor</h1>
           </div>
-          <div className="divide-x divide-neutral-600">
+          <div className="flex flex-wrap justify-center lg:justify-end divide-x divide-neutral-600">
             <a className="font-semibold text-xl px-3 first:pl-0 last:pr-0 transition duration-300 text-[#BFBFBF] hover:text-[#A6A6A6]" href="https://github.com/sponsors/LXGaming" target="_blank" rel="noopener">GitHub</a>
             <a className="font-semibold text-xl px-3 first:pl-0 last:pr-0 transition duration-300 text-[#FF5E5B] hover:text-[#E64542]" href="https://ko-fi.com/lxgaming" target="_blank" rel="noopener">Ko-fi</a>
             <a className="font-semibold text-xl px-3 first:pl-0 last:pr-0 transition duration-300 text-[#FF424D] hover:text-[#E62934]" href="https://www.patreon.com/lxgaming" target="_blank" rel="noopener">Patreon</a>
