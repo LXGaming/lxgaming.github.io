@@ -1,0 +1,16 @@
+﻿# Directories
+**/.git/
+**/.github/
+**/.idea/
+**/.next/
+**/node_modules/
+**/out/
+
+# Files
+**/.dockerignore
+**/.gitattributes
+**/.gitignore
+**/Dockerfile*
+**/LICENSE
+**/*.md
+**/*.ps1

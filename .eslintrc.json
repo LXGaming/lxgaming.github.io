@@ -1,0 +1,63 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+  ],
+  "ignorePatterns": [
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "project": true,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "import"
+  ],
+  "root": true,
+  "rules": {
+    "arrow-parens": ["error", "as-needed"],
+    "comma-dangle": ["error", "never"],
+    "eol-last": ["error", "never"],
+    "eqeqeq": ["error", "always", {
+      "null": "never"
+    }],
+    "import/order": ["error", {
+      "alphabetize": {
+        "order": "asc"
+      },
+      "newlines-between": "never"
+    }],
+    "indent": ["error", 2],
+    "linebreak-style": "off",
+    "max-len": ["off"],
+    "new-cap": ["warn"],
+    "no-constant-condition": ["off"],
+    "no-extra-semi": "off",
+    "no-undef": ["off"],
+    "object-curly-spacing": ["error", "always"],
+    "operator-linebreak": ["error", "before"],
+    "padded-blocks": ["off"],
+    "quotes": ["error", "double"],
+    "require-jsdoc": ["off"],
+    "semi": "off",
+    "sort-imports": ["error", {
+      "ignoreDeclarationSort": true
+    }],
+    "@typescript-eslint/member-delimiter-style": "error",
+    "@typescript-eslint/no-extra-semi": "error",
+    "@typescript-eslint/no-unused-vars": ["error", {
+      "argsIgnorePattern": "^props$"
+    }],
+    "@typescript-eslint/restrict-template-expressions": "off",
+    "@typescript-eslint/semi": "error",
+    "@typescript-eslint/strict-boolean-expressions": "error"
+  }
+}
