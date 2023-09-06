@@ -77,7 +77,7 @@ export default function Changelog(props: ChangelogProps) {
   }, [results.length, items, query]);
 
   return (
-    <div className="shadow-lg shadow-neutral-900">
+    <div className="shadow-lg shadow-neutral-900" data-nosnippet="true">
       <div className="flex justify-between px-3 py-2 rounded-t bg-neutral-900 text-white">
         <p className="uppercase">Changelog</p>
         <a className="text-blue-600" href={`https://github.com/${props.username}`} target="_blank" rel="noopener">{props.username}</a>
