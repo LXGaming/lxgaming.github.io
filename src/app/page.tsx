@@ -3,7 +3,10 @@ import Changelog from "~/components/Changelog";
 import Header from "~/components/Header";
 
 export const metadata: Metadata = {
-  title: "Home"
+  title: "Home",
+  alternates: {
+    canonical: "/"
+  }
 };
 
 export default function Home() {

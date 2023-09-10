@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   robots: {
     follow: false,
     index: false
+  },
+  alternates: {
+    canonical: "/contributions"
   }
 };
 
