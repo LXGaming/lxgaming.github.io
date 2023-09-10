@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Header subtitle="Full-Stack Developer"/>
 
-      <div className="grid lg:grid-cols-2 gap-3 my-3">
+      <div className="grid lg:grid-cols-2 gap-3 my-3" data-nosnippet="true">
         <div className="flex flex-col gap-3 items-center lg:items-start p-3 rounded bg-neutral-900 text-white">
           <div>
             <h1 className="font-semibold text-3xl">Social</h1>
