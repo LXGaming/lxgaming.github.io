@@ -1,8 +1,7 @@
 "use client";
 
-import { QueryFunctionContext, UseInfiniteQueryResult, useInfiniteQuery } from "@tanstack/react-query";
+import { useInfiniteQuery } from "@tanstack/react-query";
 import { useVirtualizer } from "@tanstack/react-virtual";
-import { Virtualizer } from "@tanstack/virtual-core";
 import { DateTime } from "luxon";
 import { ReactNode, useEffect, useRef } from "react";
 import {
@@ -28,12 +27,13 @@ export default function Changelog(props: ChangelogProps) {
   const perPage = props.perPage ?? DefaultEventsPerPage;
   const maximumPages = calculateEventPages(perPage);
 
-  const query: UseInfiniteQueryResult<ChangelogItemProps, Error> = useInfiniteQuery({
+  const query = useInfiniteQuery({
     queryKey: ["events", props.username],
-    queryFn: (context: QueryFunctionContext<string[], number>) => listPublicEventsForUserAsync(props.username, perPage, context.pageParam)
+    queryFn: ({ pageParam }) => listPublicEventsForUserAsync(props.username, perPage, pageParam)
       .then(events => events.map(event => {
         return { event: event, parsedEvent: parseEvent(event) } as ChangelogItemProps;
       })),
+    initialPageParam: 1,
     getNextPageParam: (lastPage, allPages) => {
       // If GitHub returns fewer events than requested it's most likely the final page.
       if (lastPage.length !== perPage) {
@@ -53,8 +53,8 @@ export default function Changelog(props: ChangelogProps) {
   const results = query.data != null ? query.data.pages.flat().filter(item => item.parsedEvent != null) : [];
 
   const scrollElement = useRef<HTMLDivElement>(null);
-  const virtualizer: Virtualizer<HTMLDivElement, Element> = useVirtualizer({
-    count: query.hasNextPage !== false ? results.length + 1 : results.length,
+  const virtualizer = useVirtualizer({
+    count: query.hasNextPage ? results.length + 1 : results.length,
     getScrollElement: () => scrollElement.current,
     estimateSize: () => 100,
     overscan: 5
@@ -63,7 +63,7 @@ export default function Changelog(props: ChangelogProps) {
 
   useEffect(() => {
     // console.debug("isError: %s, isFetching: %s, hasNextPage: %s", query.isError, query.isFetching, query.hasNextPage);
-    if (query.isError || query.isFetching || query.hasNextPage !== true || results.length === 0 || items.length === 0) {
+    if (query.isError || query.isFetching || !query.hasNextPage || results.length === 0 || items.length === 0) {
       return;
     }
 
