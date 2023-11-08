@@ -209,3 +209,4 @@ $RECYCLE.BIN/
 build/
 build.bat
 build.ps1
+next-env.d.ts
