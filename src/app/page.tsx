@@ -20,6 +20,7 @@ export default function Home() {
             <h1 className="font-semibold text-3xl">Social</h1>
           </div>
           <div className="flex flex-wrap justify-center lg:justify-start divide-x divide-neutral-600">
+            <a className="font-semibold text-xl px-3 first:pl-0 last:pr-0 transition duration-300 text-[#008FFE] hover:text-[#0062FE]" href="https://bsky.app/profile/lxgaming.me" target="_blank" rel="noopener">Bluesky</a>
             <a className="font-semibold text-xl px-3 first:pl-0 last:pr-0 transition duration-300 text-[#6364FF] hover:text-[#563ACC]" href="https://fosstodon.org/@lxgaming" target="_blank" rel="noopener">Mastodon</a>
             <a className="font-semibold text-xl px-3 first:pl-0 last:pr-0 transition duration-300 text-[#9146FF] hover:text-[#782DE6]" href="https://twitch.tv/lx_gaming" target="_blank" rel="noopener">Twitch</a>
             <a className="font-semibold text-xl px-3 first:pl-0 last:pr-0 transition duration-300 text-[#FF0000] hover:text-[#E60000]" href="https://www.youtube.com/@lx_gaming" target="_blank" rel="noopener">YouTube</a>
