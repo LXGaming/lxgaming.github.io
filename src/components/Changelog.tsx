@@ -54,7 +54,7 @@ export default function Changelog(props: ChangelogProps) {
 
   const scrollElement = useRef<HTMLDivElement>(null);
   const virtualizer = useVirtualizer({
-    count: query.hasNextPage ? results.length + 1 : results.length,
+    count: query.hasNextPage || query.isError ? results.length + 1 : results.length,
     getScrollElement: () => scrollElement.current,
     estimateSize: () => 100,
     overscan: 5
