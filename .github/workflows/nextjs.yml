@@ -5,6 +5,7 @@ on:
     branches: [ main ]
 
 permissions:
+  actions: read
   contents: read
   id-token: write
   pages: write
@@ -18,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Detect package manager
       id: detect-package-manager
       run: |
@@ -37,14 +38,14 @@ jobs:
           exit 1
         fi
     - name: Setup Node
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: lts/*
         cache: ${{ steps.detect-package-manager.outputs.manager }}
     - name: Configure Pages
-      uses: actions/configure-pages@v3
+      uses: actions/configure-pages@v4
     - name: Cache Next.js
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
         path: |
@@ -56,7 +57,7 @@ jobs:
     - name: Build with Next.js
       run: ${{ steps.detect-package-manager.outputs.runner }} next build
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v2
+      uses: actions/upload-pages-artifact@v3
       with:
         path: ./out
 
@@ -69,4 +70,4 @@ jobs:
     steps:
     - name: Deploy to GitHub Pages
       id: deployment
-      uses: actions/deploy-pages@v2
+      uses: actions/deploy-pages@v4
