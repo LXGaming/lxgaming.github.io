@@ -3,7 +3,7 @@
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import { DateTime } from "luxon";
-import { ReactNode, useEffect, useRef } from "react";
+import { type ReactNode, useEffect, useRef } from "react";
 import {
   DefaultEventsPerPage,
   calculateEventPages,
@@ -11,17 +11,17 @@ import {
   listPublicEventsForUserAsync
 } from "~/services/github/GitHubService";
 import GitHubError from "~/services/github/errors/GitHubError";
-import Event from "~/services/github/models/Event";
-import Problem from "~/services/github/models/Problem";
-import CreateEvent from "~/services/github/models/events/CreateEvent";
-import DeleteEvent from "~/services/github/models/events/DeleteEvent";
-import ForkEvent from "~/services/github/models/events/ForkEvent";
-import IssueCommentEvent from "~/services/github/models/events/IssueCommentEvent";
-import IssuesEvent from "~/services/github/models/events/IssuesEvent";
-import PublicEvent from "~/services/github/models/events/PublicEvent";
-import PushEvent from "~/services/github/models/events/PushEvent";
-import ReleaseEvent from "~/services/github/models/events/ReleaseEvent";
-import WatchEvent from "~/services/github/models/events/WatchEvent";
+import type Event from "~/services/github/models/Event";
+import type Problem from "~/services/github/models/Problem";
+import type CreateEvent from "~/services/github/models/events/CreateEvent";
+import type DeleteEvent from "~/services/github/models/events/DeleteEvent";
+import type ForkEvent from "~/services/github/models/events/ForkEvent";
+import type IssueCommentEvent from "~/services/github/models/events/IssueCommentEvent";
+import type IssuesEvent from "~/services/github/models/events/IssuesEvent";
+import type PublicEvent from "~/services/github/models/events/PublicEvent";
+import type PushEvent from "~/services/github/models/events/PushEvent";
+import type ReleaseEvent from "~/services/github/models/events/ReleaseEvent";
+import type WatchEvent from "~/services/github/models/events/WatchEvent";
 
 export default function Changelog(props: ChangelogProps) {
   const perPage = props.perPage ?? DefaultEventsPerPage;
