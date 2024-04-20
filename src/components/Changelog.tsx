@@ -50,7 +50,7 @@ export default function Changelog(props: ChangelogProps) {
     retry: false,
     retryOnMount: false
   });
-  const results = query.data != null ? query.data.pages.flat().filter(item => item.parsedEvent != null) : [];
+  const results = query.data?.pages.flat().filter(item => item.parsedEvent !== undefined) ?? [];
 
   const scrollElement = useRef<HTMLDivElement>(null);
   const virtualizer = useVirtualizer({
@@ -109,7 +109,7 @@ export interface ChangelogProps {
 }
 
 function ChangelogItem(props: ChangelogItemProps): ReactNode {
-  if (props.event != null) {
+  if (props.event !== undefined) {
     const [user, repository] = props.event.repo.name.split("/");
     return (
       <div className="flex justify-between py-3">
@@ -127,7 +127,7 @@ function ChangelogItem(props: ChangelogItemProps): ReactNode {
 
         <div className="flex flex-col flex-shrink-0 justify-between pl-2 text-right">
           <div>
-            {props.parsedEvent?.link != null && (
+            {props.parsedEvent?.link !== undefined && (
               <a className="text-blue-600" href={props.parsedEvent.link.href} target="_blank" rel="noopener">{props.parsedEvent.link.text}</a>
             )}
           </div>
@@ -139,13 +139,13 @@ function ChangelogItem(props: ChangelogItemProps): ReactNode {
     );
   }
 
-  if (props.error != null) {
+  if (props.error !== undefined) {
     const problem: Problem | undefined = props.error instanceof GitHubError ? props.error.problem : undefined;
 
     return (
       <div className="flex flex-col items-center justify-center py-3">
         <p className="text-red-600">{problem?.message ?? props.error.message}</p>
-        {problem?.documentation_url != null && (
+        {problem?.documentation_url !== undefined && (
           <a className="text-blue-600" href={problem.documentation_url}>{problem.documentation_url}</a>
         )}
       </div>
