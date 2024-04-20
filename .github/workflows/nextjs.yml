@@ -43,7 +43,7 @@ jobs:
         node-version: lts/*
         cache: ${{ steps.detect-package-manager.outputs.manager }}
     - name: Configure Pages
-      uses: actions/configure-pages@v4
+      uses: actions/configure-pages@v5
     - name: Cache Next.js
       uses: actions/cache@v4
       with:
