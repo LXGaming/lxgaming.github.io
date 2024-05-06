@@ -34,7 +34,7 @@ export function parseEvent(event: Event<unknown>): ParsedEvent | undefined {
   }
 }
 
-function parseCreateEvent(event: Event<CreateEvent>): ParsedEvent {
+function parseCreateEvent(event: Event<CreateEvent>): ParsedEvent | undefined {
   return {
     body: {
       summary: `New ${event.payload.ref_type} created`
@@ -46,7 +46,7 @@ function parseCreateEvent(event: Event<CreateEvent>): ParsedEvent {
   };
 }
 
-function parseDeleteEvent(event: Event<DeleteEvent>): ParsedEvent {
+function parseDeleteEvent(event: Event<DeleteEvent>): ParsedEvent | undefined {
   return {
     body: {
       summary: `${event.payload.ref_type} deleted: ${event.payload.ref}`
@@ -54,7 +54,7 @@ function parseDeleteEvent(event: Event<DeleteEvent>): ParsedEvent {
   };
 }
 
-function parseForkEvent(event: Event<ForkEvent>): ParsedEvent {
+function parseForkEvent(event: Event<ForkEvent>): ParsedEvent | undefined {
   return {
     body: {
       summary: "Forked"
@@ -66,7 +66,7 @@ function parseForkEvent(event: Event<ForkEvent>): ParsedEvent {
   };
 }
 
-function parseIssueCommentEvent(event: Event<IssueCommentEvent>): ParsedEvent {
+function parseIssueCommentEvent(event: Event<IssueCommentEvent>): ParsedEvent | undefined {
   return {
     body: {
       summary: `[commented] ${event.payload.issue.title}`
@@ -78,7 +78,7 @@ function parseIssueCommentEvent(event: Event<IssueCommentEvent>): ParsedEvent {
   };
 }
 
-function parseIssuesEvent(event: Event<IssuesEvent>): ParsedEvent {
+function parseIssuesEvent(event: Event<IssuesEvent>): ParsedEvent | undefined {
   return {
     body: {
       summary: `[${event.payload.action}] ${event.payload.issue.title}`
@@ -91,7 +91,7 @@ function parseIssuesEvent(event: Event<IssuesEvent>): ParsedEvent {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-function parsePublicEvent(event: Event<PublicEvent>): ParsedEvent {
+function parsePublicEvent(event: Event<PublicEvent>): ParsedEvent | undefined {
   return {
     body: {
       summary: "Now open sourced!"
@@ -99,7 +99,7 @@ function parsePublicEvent(event: Event<PublicEvent>): ParsedEvent {
   };
 }
 
-function parsePushEvent(event: Event<PushEvent>): ParsedEvent {
+function parsePushEvent(event: Event<PushEvent>): ParsedEvent | undefined {
   let href;
   if (event.payload.commits.length > 1) {
     href = `https://github.com/${event.repo.name}/compare/${event.payload.before.substring(0, 7)}...${event.payload.head.substring(0, 7)}`;
@@ -119,7 +119,7 @@ function parsePushEvent(event: Event<PushEvent>): ParsedEvent {
   };
 }
 
-function parseReleaseEvent(event: Event<ReleaseEvent>): ParsedEvent {
+function parseReleaseEvent(event: Event<ReleaseEvent>): ParsedEvent | undefined {
   return {
     body: {
       summary: "New release published"
@@ -132,7 +132,7 @@ function parseReleaseEvent(event: Event<ReleaseEvent>): ParsedEvent {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-function parseWatchEvent(event: Event<WatchEvent>): ParsedEvent {
+function parseWatchEvent(event: Event<WatchEvent>): ParsedEvent | undefined {
   return {
     body: {
       summary: "Starred"
