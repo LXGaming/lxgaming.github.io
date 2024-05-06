@@ -102,6 +102,10 @@ function parsePublicEvent(event: Event<PublicEvent>): ParsedEvent | undefined {
 }
 
 function parsePushEvent(event: Event<PushEvent>): ParsedEvent | undefined {
+  if (event.payload.commits.length === 0) {
+    return undefined;
+  }
+
   let href;
   if (event.payload.commits.length > 1) {
     href = `https://github.com/${event.repo.name}/compare/${event.payload.before.substring(0, 7)}...${event.payload.head.substring(0, 7)}`;
