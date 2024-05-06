@@ -31,6 +31,8 @@ export function parseEvent(event: Event<unknown>): ParsedEvent | undefined {
     return parseReleaseEvent(event as Event<ReleaseEvent>);
   case "WatchEvent":
     return parseWatchEvent(event as Event<WatchEvent>);
+  default:
+    return undefined;
   }
 }
 
