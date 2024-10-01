@@ -6,6 +6,7 @@
   "extends": [
     "eslint:recommended",
     "next/core-web-vitals",
+    "next/typescript",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-type-checked"
   ],
@@ -18,6 +19,7 @@
     "sourceType": "module"
   },
   "plugins": [
+    "@stylistic",
     "@typescript-eslint",
     "import"
   ],
@@ -38,24 +40,23 @@
     "max-len": ["off"],
     "new-cap": ["warn"],
     "no-constant-condition": ["off"],
-    "no-extra-semi": "off",
     "no-undef": ["off"],
     "object-curly-spacing": ["error", "always"],
     "operator-linebreak": ["error", "before"],
     "padded-blocks": ["off"],
     "quotes": ["error", "double"],
     "require-jsdoc": ["off"],
-    "semi": "off",
     "sort-imports": ["error", {
       "ignoreDeclarationSort": true
     }],
-    "@typescript-eslint/member-delimiter-style": "error",
-    "@typescript-eslint/no-extra-semi": "error",
+    "@stylistic/member-delimiter-style": "error",
+    "@stylistic/no-extra-semi": "error",
+    "@stylistic/semi": "error",
+    "@typescript-eslint/no-empty-object-type": "off",
     "@typescript-eslint/no-unused-vars": ["error", {
       "argsIgnorePattern": "^props$"
     }],
     "@typescript-eslint/restrict-template-expressions": "off",
-    "@typescript-eslint/semi": "error",
     "@typescript-eslint/strict-boolean-expressions": "error"
   }
 }
