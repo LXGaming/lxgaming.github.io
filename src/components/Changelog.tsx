@@ -4,16 +4,16 @@ import { useInfiniteQuery } from "@tanstack/react-query";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import { DateTime } from "luxon";
 import { type ReactNode, useEffect, useRef } from "react";
-import { parseEvent } from "~/services/github/EventService";
+import { parseEvent } from "@/services/github/EventService";
 import {
   DefaultEventsPerPage,
   calculateEventPages,
   listPublicEventsForUserAsync
-} from "~/services/github/GitHubService";
-import GitHubError from "~/services/github/errors/GitHubError";
-import type Event from "~/services/github/models/Event";
-import type ParsedEvent from "~/services/github/models/ParsedEvent";
-import type Problem from "~/services/github/models/Problem";
+} from "@/services/github/GitHubService";
+import GitHubError from "@/services/github/errors/GitHubError";
+import type Event from "@/services/github/models/Event";
+import type ParsedEvent from "@/services/github/models/ParsedEvent";
+import type Problem from "@/services/github/models/Problem";
 
 export default function Changelog(props: ChangelogProps) {
   const perPage = props.perPage ?? DefaultEventsPerPage;

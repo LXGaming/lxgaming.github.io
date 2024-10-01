@@ -1,6 +1,6 @@
 import { type Metadata } from "next";
-import Changelog from "~/components/Changelog";
-import Header from "~/components/Header";
+import Changelog from "@/components/Changelog";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   alternates: {

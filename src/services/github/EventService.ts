@@ -1,15 +1,15 @@
-import { formatCommitMessage } from "~/services/github/GitHubService";
-import type Event from "~/services/github/models/Event";
-import type ParsedEvent from "~/services/github/models/ParsedEvent";
-import type CreateEvent from "~/services/github/models/events/CreateEvent";
-import type DeleteEvent from "~/services/github/models/events/DeleteEvent";
-import type ForkEvent from "~/services/github/models/events/ForkEvent";
-import type IssueCommentEvent from "~/services/github/models/events/IssueCommentEvent";
-import type IssuesEvent from "~/services/github/models/events/IssuesEvent";
-import type PublicEvent from "~/services/github/models/events/PublicEvent";
-import type PushEvent from "~/services/github/models/events/PushEvent";
-import type ReleaseEvent from "~/services/github/models/events/ReleaseEvent";
-import type WatchEvent from "~/services/github/models/events/WatchEvent";
+import { formatCommitMessage } from "@/services/github/GitHubService";
+import type Event from "@/services/github/models/Event";
+import type ParsedEvent from "@/services/github/models/ParsedEvent";
+import type CreateEvent from "@/services/github/models/events/CreateEvent";
+import type DeleteEvent from "@/services/github/models/events/DeleteEvent";
+import type ForkEvent from "@/services/github/models/events/ForkEvent";
+import type IssueCommentEvent from "@/services/github/models/events/IssueCommentEvent";
+import type IssuesEvent from "@/services/github/models/events/IssuesEvent";
+import type PublicEvent from "@/services/github/models/events/PublicEvent";
+import type PushEvent from "@/services/github/models/events/PushEvent";
+import type ReleaseEvent from "@/services/github/models/events/ReleaseEvent";
+import type WatchEvent from "@/services/github/models/events/WatchEvent";
 
 export function parseEvent(event: Event<unknown>): ParsedEvent | undefined {
   switch (event.type) {

@@ -1,5 +1,5 @@
-import HttpRequestError from "~/errors/HttpRequestError";
-import type Problem from "~/services/github/models/Problem";
+import HttpRequestError from "@/errors/HttpRequestError";
+import type Problem from "@/services/github/models/Problem";
 
 export default class GitHubError extends HttpRequestError {
 

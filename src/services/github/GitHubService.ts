@@ -1,7 +1,7 @@
 import { StatusCodes, getReasonPhrase } from "http-status-codes";
-import HttpRequestError from "~/errors/HttpRequestError";
-import GitHubError from "~/services/github/errors/GitHubError";
-import type Event from "~/services/github/models/Event";
+import HttpRequestError from "@/errors/HttpRequestError";
+import GitHubError from "@/services/github/errors/GitHubError";
+import type Event from "@/services/github/models/Event";
 
 export const MaximumEvents = 300;
 export const DefaultEventsPerPage = 30;
