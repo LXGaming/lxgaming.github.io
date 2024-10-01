@@ -28,7 +28,9 @@
     "arrow-parens": ["error", "as-needed"],
     "comma-dangle": ["error", "never"],
     "eol-last": ["error", "never"],
-    "eqeqeq": ["error", "always"],
+    "eqeqeq": ["error", "always", {
+      "null": "never"
+    }],
     "import/order": ["error", {
       "alphabetize": {
         "order": "asc"
