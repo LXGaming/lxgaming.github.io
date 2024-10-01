@@ -284,5 +284,6 @@ $RECYCLE.BIN/
 .idea/
 .vercel/
 build/
+web-build/
 build.ps1
 next-env.d.ts
