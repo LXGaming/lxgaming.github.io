@@ -1,30 +1,31 @@
-{
-  "env": {
-    "es2021": true,
-    "node": true
+// @ts-check
+
+import eslint from "@eslint/js";
+import next from "@next/eslint-plugin-next";
+import stylistic from "@stylistic/eslint-plugin";
+import _import from "eslint-plugin-import";
+import tseslint from "typescript-eslint";
+
+export default tseslint.config({
+  extends: [
+    eslint.configs.recommended,
+    tseslint.configs.recommendedTypeChecked,
+    tseslint.configs.stylisticTypeChecked
+  ],
+  languageOptions: {
+    parserOptions: {
+      projectService: true,
+      tsconfigRootDir: import.meta.dirname
+    }
   },
-  "extends": [
-    "eslint:recommended",
-    "next/core-web-vitals",
-    "next/typescript",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-type-checked"
-  ],
-  "ignorePatterns": [
-  ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaVersion": 12,
-    "project": true,
-    "sourceType": "module"
+  plugins: {
+    "@next/next": next,
+    "@stylistic": stylistic,
+    "import": _import
   },
-  "plugins": [
-    "@stylistic",
-    "@typescript-eslint",
-    "import"
-  ],
-  "root": true,
-  "rules": {
+  rules: {
+    ...next.configs["recommended"].rules,
+    ...next.configs["core-web-vitals"].rules,
     "arrow-parens": ["error", "as-needed"],
     "comma-dangle": ["error", "never"],
     "eol-last": ["error", "never"],
@@ -56,6 +57,7 @@
     "@stylistic/no-extra-semi": "error",
     "@stylistic/semi": "error",
     "@typescript-eslint/no-empty-object-type": "off",
+    "@typescript-eslint/no-inferrable-types": "off",
     "@typescript-eslint/no-restricted-imports": ["error", {
       "patterns": [
         {
@@ -70,4 +72,4 @@
     "@typescript-eslint/restrict-template-expressions": "off",
     "@typescript-eslint/strict-boolean-expressions": "error"
   }
-}
+});
