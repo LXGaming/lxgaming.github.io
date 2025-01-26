@@ -117,7 +117,7 @@ function ChangelogItem(props: ChangelogItemProps): ReactNode {
           </div>
         </div>
 
-        <div className="flex flex-col flex-shrink-0 justify-between pl-2 text-right">
+        <div className="flex flex-col shrink-0 justify-between pl-2 text-right">
           <div>
             {props.parsedEvent?.link !== undefined && (
               <a className="text-blue-600" href={props.parsedEvent.link.href} target="_blank" rel="noopener">{props.parsedEvent.link.text}</a>

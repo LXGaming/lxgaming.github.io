@@ -8,7 +8,7 @@ export default function Header(props: HeaderProps) {
   const pathname = usePathname();
 
   return (
-    <div className="grid grid-cols-3 items-center p-3 rounded bg-neutral-900 text-white" data-nosnippet="true">
+    <div className="grid grid-cols-3 items-center p-3 rounded-sm bg-neutral-900 text-white" data-nosnippet="true">
       <div className="flex p-4">
         { pathname !== "/" && (
           <Link href="/">

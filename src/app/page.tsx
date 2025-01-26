@@ -14,7 +14,7 @@ export default function Home() {
       <Header subtitle="Full-Stack Developer"/>
 
       <div className="grid lg:grid-cols-2 gap-3 my-3" data-nosnippet="true">
-        <div className="flex flex-col gap-3 items-center lg:items-start p-3 rounded bg-neutral-900 text-white">
+        <div className="flex flex-col gap-3 items-center lg:items-start p-3 rounded-sm bg-neutral-900 text-white">
           <div>
             <h1 className="font-semibold text-3xl">Social</h1>
           </div>
@@ -25,7 +25,7 @@ export default function Home() {
             <a className="font-semibold text-xl px-3 first:pl-0 last:pr-0 transition duration-300 text-[#FF0000] hover:text-[#E60000]" href="https://www.youtube.com/@lx_gaming" target="_blank" rel="noopener">YouTube</a>
           </div>
         </div>
-        <div className="flex flex-col gap-3 items-center lg:items-end p-3 rounded bg-neutral-900 text-white">
+        <div className="flex flex-col gap-3 items-center lg:items-end p-3 rounded-sm bg-neutral-900 text-white">
           <div>
             <h1 className="font-semibold text-3xl">Sponsor</h1>
           </div>
