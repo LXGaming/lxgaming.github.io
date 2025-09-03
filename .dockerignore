@@ -3,6 +3,8 @@
 **/.github/
 **/.idea/
 **/.next/
+**/.vs/
+**/dist/
 **/node_modules/
 **/out/
 
@@ -10,7 +12,6 @@
 **/.dockerignore
 **/.gitattributes
 **/.gitignore
+**/docker-compose.yml
 **/Dockerfile*
-**/LICENSE
-**/*.md
-**/*.ps1
+**/*Dockerfile
