@@ -13,26 +13,26 @@ import type WatchEvent from "@/services/github/models/events/WatchEvent";
 
 export function parseEvent(event: Event<unknown>): ParsedEvent | undefined {
   switch (event.type) {
-  case "CreateEvent":
-    return parseCreateEvent(event as Event<CreateEvent>);
-  case "DeleteEvent":
-    return parseDeleteEvent(event as Event<DeleteEvent>);
-  case "ForkEvent":
-    return parseForkEvent(event as Event<ForkEvent>);
-  case "IssueCommentEvent":
-    return parseIssueCommentEvent(event as Event<IssueCommentEvent>);
-  case "IssuesEvent":
-    return parseIssuesEvent(event as Event<IssuesEvent>);
-  case "PublicEvent":
-    return parsePublicEvent(event as Event<PublicEvent>);
-  case "PushEvent":
-    return parsePushEvent(event as Event<PushEvent>);
-  case "ReleaseEvent":
-    return parseReleaseEvent(event as Event<ReleaseEvent>);
-  case "WatchEvent":
-    return parseWatchEvent(event as Event<WatchEvent>);
-  default:
-    return undefined;
+    case "CreateEvent":
+      return parseCreateEvent(event as Event<CreateEvent>);
+    case "DeleteEvent":
+      return parseDeleteEvent(event as Event<DeleteEvent>);
+    case "ForkEvent":
+      return parseForkEvent(event as Event<ForkEvent>);
+    case "IssueCommentEvent":
+      return parseIssueCommentEvent(event as Event<IssueCommentEvent>);
+    case "IssuesEvent":
+      return parseIssuesEvent(event as Event<IssuesEvent>);
+    case "PublicEvent":
+      return parsePublicEvent(event as Event<PublicEvent>);
+    case "PushEvent":
+      return parsePushEvent(event as Event<PushEvent>);
+    case "ReleaseEvent":
+      return parseReleaseEvent(event as Event<ReleaseEvent>);
+    case "WatchEvent":
+      return parseWatchEvent(event as Event<WatchEvent>);
+    default:
+      return undefined;
   }
 }
 

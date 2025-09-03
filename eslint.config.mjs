@@ -12,6 +12,16 @@ export default tseslint.config({
     tseslint.configs.recommendedTypeChecked,
     tseslint.configs.stylisticTypeChecked
   ],
+  ignores: [
+    ".next/**",
+    "build/**",
+    "dist/**",
+    "node_modules/**",
+    "out/**",
+    "eslint.config.mjs",
+    "next-env.d.ts",
+    "postcss.config.mjs"
+  ],
   languageOptions: {
     parserOptions: {
       projectService: true,
@@ -38,7 +48,6 @@ export default tseslint.config({
       },
       "newlines-between": "never"
     }],
-    "indent": ["error", 2],
     "linebreak-style": "off",
     "max-len": ["off"],
     "new-cap": ["warn"],
@@ -53,6 +62,7 @@ export default tseslint.config({
     "sort-imports": ["error", {
       "ignoreDeclarationSort": true
     }],
+    "@stylistic/indent": ["error", 2],
     "@stylistic/member-delimiter-style": "error",
     "@stylistic/no-extra-semi": "error",
     "@stylistic/semi": "error",
