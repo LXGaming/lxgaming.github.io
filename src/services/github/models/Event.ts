@@ -22,6 +22,7 @@ export type EventTypes =
   | "CommitCommentEvent"
   | "CreateEvent"
   | "DeleteEvent"
+  | "DiscussionEvent"
   | "ForkEvent"
   | "GollumEvent"
   | "IssueCommentEvent"
@@ -31,8 +32,6 @@ export type EventTypes =
   | "PullRequestEvent"
   | "PullRequestReviewEvent"
   | "PullRequestReviewCommentEvent"
-  | "PullRequestReviewThreadEvent"
   | "PushEvent"
   | "ReleaseEvent"
-  | "SponsorshipEvent"
   | "WatchEvent";

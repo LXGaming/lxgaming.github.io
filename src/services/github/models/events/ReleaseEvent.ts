@@ -5,13 +5,5 @@ import type { components } from "@octokit/openapi-types";
  */
 export default interface ReleaseEvent {
   action: string;
-  changes?: {
-    body?: {
-      from: string;
-    };
-    name?: {
-      from: string;
-    };
-  };
   release: components["schemas"]["release"];
 }

@@ -6,14 +6,8 @@ import type { components } from "@octokit/openapi-types";
 export default interface IssuesEvent {
   action: string;
   issue: components["schemas"]["issue"];
-  changes?: {
-    title?: {
-      from: string;
-    };
-    body?: {
-      from: string;
-    };
-  };
   assignee?: components["schemas"]["simple-user"];
+  assignees?: components["schemas"]["simple-user"][];
   label?: components["schemas"]["issue-event-label"];
+  labels?: components["schemas"]["issue-event-label"][];
 }

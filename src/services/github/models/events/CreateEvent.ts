@@ -4,6 +4,7 @@
 export default interface CreateEvent {
   ref: string;
   ref_type: string;
+  full_ref: string;
   master_branch: string;
   description: string;
   pusher_type: string;

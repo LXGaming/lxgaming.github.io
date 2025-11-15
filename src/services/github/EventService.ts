@@ -1,4 +1,3 @@
-import { formatCommitMessage } from "@/services/github/GitHubService";
 import type Event from "@/services/github/models/Event";
 import type ParsedEvent from "@/services/github/models/ParsedEvent";
 import type CreateEvent from "@/services/github/models/events/CreateEvent";
@@ -102,21 +101,11 @@ function parsePublicEvent(event: Event<PublicEvent>): ParsedEvent | undefined {
 }
 
 function parsePushEvent(event: Event<PushEvent>): ParsedEvent | undefined {
-  if (event.payload.commits.length === 0) {
-    return undefined;
-  }
-
-  let href;
-  if (event.payload.commits.length > 1) {
-    href = `https://github.com/${event.repo.name}/compare/${event.payload.before.substring(0, 7)}...${event.payload.head.substring(0, 7)}`;
-  } else {
-    href = `https://github.com/${event.repo.name}/commit/${event.payload.head}`;
-  }
+  const href = `https://github.com/${event.repo.name}/compare/${event.payload.before.substring(0, 7)}...${event.payload.head.substring(0, 7)}`;
 
   return {
     body: {
-      summary: `${event.payload.commits.length} new ${event.payload.commits.length === 1 ? "commit" : "commits"}`,
-      description: event.payload.commits.flatMap(commit => formatCommitMessage(commit.message)[0]).slice(0, 5)
+      summary: "Pushed"
     },
     link: {
       text: event.payload.head.substring(0, 7),

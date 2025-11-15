@@ -6,9 +6,4 @@ import type { components } from "@octokit/openapi-types";
 export default interface MemberEvent {
   action: string;
   member: components["schemas"]["simple-user"];
-  changes?: {
-    old_permission?: {
-      from: string;
-    };
-  };
 }

@@ -5,6 +5,7 @@ export default interface GollumEvent {
   pages: {
     page_name: string;
     title: string;
+    summary: string;
     action: string;
     sha: string;
     html_url: string;

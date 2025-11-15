@@ -6,13 +6,9 @@ import type { components } from "@octokit/openapi-types";
 export default interface PullRequestEvent {
   action: string;
   number: number;
-  changes?: {
-    title?: {
-      from: string;
-    };
-    body?: {
-      from: string;
-    };
-  };
   pull_request: components["schemas"]["pull-request"];
+  assignee?: components["schemas"]["simple-user"];
+  assignees?: components["schemas"]["simple-user"][];
+  label?: components["schemas"]["issue-event-label"];
+  labels?: components["schemas"]["issue-event-label"][];
 }

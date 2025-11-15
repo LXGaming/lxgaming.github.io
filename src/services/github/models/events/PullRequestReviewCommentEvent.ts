@@ -5,11 +5,6 @@ import type { components } from "@octokit/openapi-types";
  */
 export default interface PullRequestReviewCommentEvent {
   action: string;
-  changes?: {
-    body?: {
-      from: string;
-    };
-  };
   pull_request: components["schemas"]["pull-request-simple"];
   comment: components["schemas"]["pull-request-review-comment"];
 }
