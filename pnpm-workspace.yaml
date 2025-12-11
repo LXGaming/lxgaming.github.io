@@ -1,4 +1,5 @@
 minimumReleaseAge: 4320
+trustPolicy: no-downgrade
 onlyBuiltDependencies:
   - sharp
   - unrs-resolver
