@@ -1,9 +1,9 @@
 import type { components } from "@octokit/openapi-types";
 
 /**
- * {@link https://docs.github.com/en/webhooks-and-events/events/github-event-types#discussionevent DiscussionEvent}
+ * {@link https://docs.github.com/en/rest/using-the-rest-api/github-event-types?apiVersion=2022-11-28#discussionevent DiscussionEvent}
  */
 export default interface DiscussionEvent {
-  action: string;
+  action: "created";
   discussion: components["schemas"]["discussion"];
 }

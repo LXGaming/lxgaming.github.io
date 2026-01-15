@@ -1,10 +1,10 @@
 import type { components } from "@octokit/openapi-types";
 
 /**
- * {@link https://docs.github.com/en/webhooks-and-events/events/github-event-types#issuecommentevent IssueCommentEvent}
+ * {@link https://docs.github.com/en/rest/using-the-rest-api/github-event-types?apiVersion=2022-11-28#issuecommentevent IssueCommentEvent}
  */
 export default interface IssueCommentEvent {
-  action: string;
+  action: "created";
   issue: components["schemas"]["issue"];
   comment: components["schemas"]["issue-comment"];
 }

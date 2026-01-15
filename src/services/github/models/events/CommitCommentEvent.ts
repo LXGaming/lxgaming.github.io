@@ -1,9 +1,9 @@
 import type { components } from "@octokit/openapi-types";
 
 /**
- * {@link https://docs.github.com/en/webhooks-and-events/events/github-event-types#commitcommentevent CommitCommentEvent}
+ * {@link https://docs.github.com/en/rest/using-the-rest-api/github-event-types?apiVersion=2022-11-28#commitcommentevent CommitCommentEvent}
  */
 export default interface CommitCommentEvent {
-  action: string;
+  action: "created";
   comment: components["schemas"]["commit-comment"];
 }

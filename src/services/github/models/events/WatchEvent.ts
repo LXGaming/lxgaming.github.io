@@ -1,6 +1,6 @@
 /**
- * {@link https://docs.github.com/en/webhooks-and-events/events/github-event-types#watchevent WatchEvent}
+ * {@link https://docs.github.com/en/rest/using-the-rest-api/github-event-types?apiVersion=2022-11-28#watchevent WatchEvent}
  */
 export default interface WatchEvent {
-  action: string;
+  action: "started";
 }
