@@ -3,3 +3,6 @@ allowBuilds:
   unrs-resolver: false
 minimumReleaseAge: 4320
 trustPolicy: no-downgrade
+trustPolicyExclude:
+  - 'eslint-import-resolver-typescript@3.10.1'
+  - 'semver@6.3.1'
