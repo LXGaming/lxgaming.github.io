@@ -33,7 +33,6 @@ export default function Home() {
             <a className="font-semibold text-xl px-3 first:pl-0 last:pr-0 transition duration-300 text-[#BFBFBF] hover:text-[#A6A6A6]" href="https://github.com/sponsors/LXGaming" target="_blank" rel="noopener">GitHub</a>
             <a className="font-semibold text-xl px-3 first:pl-0 last:pr-0 transition duration-300 text-[#FF5E5B] hover:text-[#E64542]" href="https://ko-fi.com/lxgaming" target="_blank" rel="noopener">Ko-fi</a>
             <a className="font-semibold text-xl px-3 first:pl-0 last:pr-0 transition duration-300 text-[#FF424D] hover:text-[#E62934]" href="https://www.patreon.com/lxgaming" target="_blank" rel="noopener">Patreon</a>
-            <a className="font-semibold text-xl px-3 first:pl-0 last:pr-0 transition duration-300 text-[#635BFF] hover:text-[#4A42E6]" href="https://donate.stripe.com/14kcOf7H2cIdd2gdQQ" target="_blank" rel="noopener">Stripe</a>
           </div>
         </div>
       </div>
